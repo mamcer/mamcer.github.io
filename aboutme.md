@@ -1,16 +1,12 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Hi, I'm Mario
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+I'm a developer with more than 15 years of experience. Most of them in the .NET stack. 
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+I'm from [Balcarce](https://en.wikipedia.org/wiki/Balcarce,_Buenos_Aires) but I live in Buenos Aires, Argentina since more than a decade. Part of the architecture team at [Globant](https://www.globant.com/), this blog, its content and opinions are my own.
 
-What else do you need?
+Since I remember I enjoy thinkering things. I found in technology a way to view, design and create. Passionate about technology, learn, teach and quality, not always in that order.
 
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
