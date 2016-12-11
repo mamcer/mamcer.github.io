@@ -72,7 +72,7 @@ url-pretty: "mamcer.github.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-disqus: "mamcer"
+disqus: "https-mamcer-github-io"
 
 # Fill in your Google Analytics ID to track your website using GA
 google_analytics: ""
