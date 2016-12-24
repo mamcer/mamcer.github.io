@@ -23,13 +23,13 @@ Extend support for the built-in Bamboo agent Git support.
 
 [https://git-scm.com/]()
 
-![GIT INSTALL](../img/2016-12-21-bamboo-net-agent/01-git.png)
+![GIT INSTALL](../img/2016-12-24-bamboo-net-agent/01-git.png)
 
 ## Add .NET 3.5.1 features
 
 Server Manager > Features > Add Feature  (.NET Framework 3.5.1. Features)
 
-![NET 35 FEATURES](../img/2016-12-21-bamboo-net-agent/02-net-35-features.png)
+![NET 35 FEATURES](../img/2016-12-24-bamboo-net-agent/02-net-35-features.png)
 
 ## Nuget
 
@@ -39,7 +39,7 @@ Also you can configure EnableNuGetPackageRestore=true environment variable.
 
 System Properties > Advanced System Settings > Environment Variables > New System Variable
 
-![NUGET ENVIRONMENT VARIABLE](../img/2016-12-21-bamboo-net-agent/06-nuget-environment-variable.png)
+![NUGET ENVIRONMENT VARIABLE](../img/2016-12-24-bamboo-net-agent/06-nuget-environment-variable.png)
 
 > You need to restart the agent service to apply any change to the system environment  variables
 
@@ -54,7 +54,7 @@ The Microsoft .NET Framework 4.6.2 Developer Pack installs the .NET Framework 4.
 [Microsoft Download Center link](https://www.microsoft.com/en-us/download/details.aspx?id=53321)
 
 
-![DEVELOPER PACK](../img/2016-12-21-bamboo-net-agent/03-developer-pack.png)
+![DEVELOPER PACK](../img/2016-12-24-bamboo-net-agent/03-developer-pack.png)
 
 ## Build Tools
 
@@ -66,7 +66,7 @@ Include the essential tools for building managed applications. The latest versio
 
 [Download link](https://go.microsoft.com/fwlink/?LinkId=615458)
 
-![BUILD TOOLS](../img/2016-12-21-bamboo-net-agent/04-build-tools.png)
+![BUILD TOOLS](../img/2016-12-24-bamboo-net-agent/04-build-tools.png)
 
 ## Agent for Visual Studio 2015
 
@@ -76,7 +76,7 @@ Agents for Visual Studio Update 3
 
 [Download link](https://go.microsoft.com/fwlink/?LinkId=615472&clcid=0x409)
 
-![AGENTS](../img/2016-12-21-bamboo-net-agent/05-agents.png)
+![AGENTS](../img/2016-12-24-bamboo-net-agent/05-agents.png)
 
 ## SQL Server Data Tools
 
@@ -86,7 +86,7 @@ SQL Server Data Tools in Visual Studio 2015 version: 14.0.60812.0
 
 [Download Link](https://msdn.microsoft.com/en-us/mt186501)
 
-![SQL SERVER DATA TOOLS](../img/2016-12-21-bamboo-net-agent/03-sql-server-data-tools.png)
+![SQL SERVER DATA TOOLS](../img/2016-12-24-bamboo-net-agent/03-sql-server-data-tools.png)
 
 Remember to unblock the installer first.
 
@@ -94,7 +94,7 @@ If you (like me) get an error message almost immediatly after the install proces
 
 Internet Options > Security > Custom level... (Enable File download)
 
-![SQL SERVER DATA TOOLS](../img/2016-12-21-bamboo-net-agent/03-sql-server-data-tools-enable-file-downlad.png)
+![SQL SERVER DATA TOOLS](../img/2016-12-24-bamboo-net-agent/03-sql-server-data-tools-enable-file-downlad.png)
 
 ## Summarizing
 
