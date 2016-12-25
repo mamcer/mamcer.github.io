@@ -1,12 +1,15 @@
 ---
 layout: post
-title: CentOS 7
-subtitle: Minimal installation
+title: CentOS 7 Minimal
+subtitle: Configuration
 ---
 
-# CentOS 7 Minimal Installation
+# CentOS 7 Minimal Installation Configuration
 
 Based on: [http://www.tecmint.com/things-to-do-after-minimal-rhel-centos-7-installation/]()
+
+A small subset of steps I was executing after a CentOS 7 minimal installation. In this case it was to configure different Bamboo, Crucible and JIRA test server instances.
+
 
 ## Static IP
 
