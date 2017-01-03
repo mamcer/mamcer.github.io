@@ -4,8 +4,6 @@ title: Bamboo Ubuntu Install
 subtitle: Installation steps
 ---
 
-# Bamboo Ubuntu
-
 ## Initial Notes
 
 I have installed it on my laptop so I have skipped some steps like create a specific bamboo user, etc.
