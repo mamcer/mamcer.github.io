@@ -8,7 +8,7 @@ subtitle: Tools configuration added as Commands
 
 I found useful to configure different tools and batch files as Commands in Bamboo. To support and easily configure my build plans later.
 
-There is a basic list of tools and their configuration, also some of them are based on different batch file created by me that you can find in this repo.
+There is a basic list of tools and their configuration, also some of them are based on different batch file created by me that you can find in [this repo](https://github.com/mamcer/bamboo-cmd).
 
 ## 7zip
 
