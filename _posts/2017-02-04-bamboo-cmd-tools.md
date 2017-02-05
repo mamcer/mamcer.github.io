@@ -148,7 +148,7 @@ The output of the analysis is a xml file with the coverage results. The file is 
 
 ### Source code
 
-You can find this batch file in the following repo.
+You can find this batch file in the [following repo](https://github.com/mamcer/bamboo-cmd).
 
 ## Report Generator
 
@@ -188,7 +188,7 @@ You can then for example deploy the content to a web server or add a 7z command 
 
 ### Source code
 
-You can find this batch file in the following repo.
+You can find this batch file in the [following repo](https://github.com/mamcer/bamboo-cmd).
 
 ## VSTest.Console
 
@@ -240,7 +240,7 @@ That will allow Bamboo show the test run results in the Tests tab of every build
 
 ### Source code
 
-You can find this batch file in the following repo.
+You can find this batch file in the [following repo](https://github.com/mamcer/bamboo-cmd).
 
 ## Final thoughts
 
