@@ -22,7 +22,7 @@ The next step is to configure the tasks. In this case (just to build the applica
 
 For the configuration of the task we have to  specify the MSBuild executable, solution file name and optionally some parameters.
 
-![MSBuild Task Configuration](../img/2017-02-26-bamboo-net-ci-plan-configuration/03-msbuild-configuration.png)
+![MSBuild Task Configuration](../img/2017-02-26-bamboo-net-ci-plan-configuration/03-msbuild-configuration.PNG)
 
 In this case I've added:
 
@@ -34,7 +34,7 @@ To build multiple projects in parallel and to explicitly build in Debug mode.
 
 With a source code checkout and a MSBuild task we should be ready to run our first build. Just click enable plan and run.
 
-![Build Failed](../img/2017-02-26-bamboo-net-ci-plan-configuration/04-build-failed.png)
+![Build Failed](../img/2017-02-26-bamboo-net-ci-plan-configuration/04-build-failed.PNG)
 
 The result is not what I was expected but the error log is clear enough to easily understand what is happening.
 
@@ -48,13 +48,13 @@ Actions > Configure Plan to add a Command task (in a previous post I have explai
 
 The configuration of the Nuget task is very straightforward. A command with nuget configured as executable and `restore` as a parameter.
 
-![Nuget Restore](../img/2017-02-26-bamboo-net-ci-plan-configuration/05-nuget-restore.png)
+![Nuget Restore](../img/2017-02-26-bamboo-net-ci-plan-configuration/05-nuget-restore.PNG)
 
 ## Second build
 
 We are ready to run our second build and the results are what we expected in the first try :)
 
-![Build Successful](../img/2017-02-26-bamboo-net-ci-plan-configuration/06-build-success.png)
+![Build Successful](../img/2017-02-26-bamboo-net-ci-plan-configuration/06-build-success.PNG)
 
 ## Unit test
 
@@ -66,17 +66,17 @@ In a Continuous Integration process is very recommended (to not say mandatory) t
     
 We have to add a new Command task to our Build job. Configure the executable to vstest.console (or the name we choose for the vstest-console.cmd script) and the Bamboo build working directory variable `${bamboo.build.working.directory}` as a parameter.
 
-![VSTest Console Task](../img/2017-02-26-bamboo-net-ci-plan-configuration/08-vstest-console.png)
+![VSTest Console Task](../img/2017-02-26-bamboo-net-ci-plan-configuration/08-vstest-console.PNG)
 
 After that we can add a MS Test Parser task to see the results in the Test results tab of every build in Bamboo. The only configuration needed is the Test results directory `TestResults` in our case.
 
-![MSTest Parser Task](../img/2017-02-26-bamboo-net-ci-plan-configuration/09-test-parser.png)
+![MSTest Parser Task](../img/2017-02-26-bamboo-net-ci-plan-configuration/09-test-parser.PNG)
 
 ## Done
 
 We have a Continuous Integration plan in Bamboo that builds and run our unit tests for every commit to the repository. 
 
-![Test Done](../img/2017-02-26-bamboo-net-ci-plan-configuration/10-tests-done.png)
+![Test Done](../img/2017-02-26-bamboo-net-ci-plan-configuration/10-tests-done.PNG)
 
 As a next step we can think in include a code coverage analysis of our unit tests, generate a deployment package or a SonarQube analysis. But most of these options are recommended to be included in a separated plan.
 
