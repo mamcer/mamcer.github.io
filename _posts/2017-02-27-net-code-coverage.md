@@ -59,11 +59,11 @@ That will produce an `open-cover.xml` file at the solution level with the code c
 
 ![OpenCover xml](../img/2017-02-27-net-code-coverage/02-open-cover-xml.png)
 
-This file is not particulary friendly for humans. That is where report-generator can help us. Run `report-generator.cmd`
+This file is not particularly friendly for humans. That is where report-generator can help us. Run `report-generator.cmd`
 
 ![Report Generator Run](../img/2017-02-27-net-code-coverage/03-report-generator-run.png)
 
-and almost inmediately we will have a `coverage-report` folder at the solution level with the OpenCover coverage results in a friendly html report
+and almost immediately we will have a `coverage-report` folder at the solution level with the OpenCover coverage results in a friendly html report
 
 ![Coverage Report Folder](../img/2017-02-27-net-code-coverage/04-coverage-report.png)
 
