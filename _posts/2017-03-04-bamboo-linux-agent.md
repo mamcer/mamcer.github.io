@@ -51,7 +51,7 @@ You can run the agent on the server by executing:
 
 > In a ssh session you can append & at the end to leave the process running in background
 
-There are different additional agent options. You can review the [official bamboo documentation](https://confluence.atlassian.com/bamboo/additional-remote-agent-options-436044733.html) for an extensive list of available options.
+There are different additional agent options. You can review the [official bamboo documentation](https://confluence.atlassian.com/bamboo/additional-remote-agent-options-436044733.html) for an intensive list of available options.
 
 ## Docker (Only)
 
