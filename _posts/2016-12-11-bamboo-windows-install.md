@@ -232,3 +232,29 @@ Setup an administrator user and that's it we should be ready to implement contin
 ## Next steps
 
 In future posts we can see how to configure build agents and create continuous integrations and deployment plans.
+
+## Update: SMTP configuration
+
+In my case I have created and configured an outlook account for notifications.
+
+Go to Communication > Mail server
+
+Basically the required configuration is:
+
+from	[no-reply-account]@outlook.com
+username [no-reply-account]@outlook.com
+serverName	smtp-mail.outlook.com
+port	587
+use tls true
+
+|       Key      |              Value             |
+|:--------------:|:------------------------------:|
+| From address   | [no-reply-account]@outlook.com |
+| Email settings | SMTP                           |
+| SMTP server    | smtp-mail.outlook.com          |
+| SMTP port      | 587                            |
+| Username       | [no-reply-account]@outlook.com |
+| Use TLS        | True                           |
+
+
+![SMTP Configuration](../img/2016-12-11-bamboo-windows-install/18-smtp-configuration.png)
