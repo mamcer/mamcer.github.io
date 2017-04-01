@@ -60,6 +60,8 @@ As another Command we will configure VSTest.Console.
 
 ![VSTEST.CONSOLE CAPABILITY](../img/2017-01-21-bamboo-net-agent-config/05-vstest.console-capability.png)
 
+    C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\CommonExtensions\Microsoft\TestWindow
+
 vstest.console will be our default option to execute our unit tests
 
 ## 7zip
@@ -72,19 +74,23 @@ Another command for 7zip
 
 ## OpenCover
 
-Another command for OpenCover
+Another command for [OpenCover](https://github.com/OpenCover/opencover). You can download it with nuget 
+
+    nuget install OpenCover
 
 ![OpenCover](../img/2017-01-21-bamboo-net-agent-config/09-opencover-capability.png)
 
-[OpenCover](https://github.com/opencover/opencover) is my default option to measure the code coverage of unit tests. You can install the latest version with nuget as part of your plan but I find useful to have a default option configured as a capability.  
+OpenCover is my default option to measure the code coverage of unit tests. You can install the latest version with nuget as part of your plan but I find useful to have a default option configured as a capability.  
 
 ## ReportGenerator
 
-Another command for ReportGenerator
+Another command for [ReportGenerator](https://github.com/danielpalme/ReportGenerator). You can download it with nuget 
+
+    nuget install ReportGenerator
 
 ![ReportGenerator](../img/2017-01-21-bamboo-net-agent-config/10-reportgenerator-capability.png)
 
-[ReportGenerator](https://github.com/danielpalme/ReportGenerator) is a perfect companion for OpenCover to generate "human friendly" html reports of the results.  
+ReportGenerator is a perfect companion for OpenCover to generate "human friendly" html reports of the results.  
 
 ## Summary
 
