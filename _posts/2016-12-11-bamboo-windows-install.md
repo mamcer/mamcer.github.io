@@ -235,17 +235,11 @@ In future posts we can see how to configure build agents and create continuous i
 
 ## Update: SMTP configuration
 
-In my case I have created and configured an outlook account for notifications.
+Useful to get build status notifications. In my case I have created and configured an outlook account and configured it in Bamboo.
 
 Go to Communication > Mail server
 
 Basically the required configuration is:
-
-from	[no-reply-account]@outlook.com
-username [no-reply-account]@outlook.com
-serverName	smtp-mail.outlook.com
-port	587
-use tls true
 
 |       Key      |              Value             |
 |:--------------:|:------------------------------:|
