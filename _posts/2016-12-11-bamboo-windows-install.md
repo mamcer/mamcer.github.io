@@ -10,7 +10,7 @@ This installation was done following the official documentation: [https://conflu
 
 ## Requirements
 
-You can check the current Bamboo supported versions in the following Atlassian confluence page: [https://confluence.atlassian.com/bamboo/supported-platforms-289276764.html]()
+You can check the current Bamboo supported versions in the following Atlassian confluence page: [https://confluence.atlassian.com/bamboo/supported-platforms-289276764.html](https://confluence.atlassian.com/bamboo/supported-platforms-289276764.html)
 
 In this case we have a clean Windows Server 2012 Standard installation. Our first steps are the installation of the JDK and SQL Server.
 
