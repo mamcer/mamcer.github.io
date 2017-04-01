@@ -6,7 +6,7 @@ subtitle:  with SQL Server! step by step guide
 
 On this post I will describe my experience step by step installing Atlassian Bamboo on Windows with SQL Server as database.
 
-This installation was done following the official documentation: [https://confluence.atlassian.com/bamboo/installing-bamboo-on-windows-289276813.html]()
+This installation was done following the official documentation: [https://confluence.atlassian.com/bamboo/installing-bamboo-on-windows-289276813.html](https://confluence.atlassian.com/bamboo/installing-bamboo-on-windows-289276813.html)
 
 ## Requirements
 
@@ -18,7 +18,7 @@ In this case we have a clean Windows Server 2012 Standard installation. Our firs
 
 ### JDK
 
-First of all we want to install Java. In this case Oracle JDK, you can find the latest version in: [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html]()
+First of all we want to install Java. In this case Oracle JDK, you can find the latest version in: [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
 The latest version at the moment of this write is JDK 8 update 101 (`jdk-8u101-windows-x64.exe`)
 
@@ -29,7 +29,7 @@ The latest version at the moment of this write is JDK 8 update 101 (`jdk-8u101-w
 
 After you follow the wizard steps and finished the Java installation we just only need to define the JAVA_HOME environment variable
 
-- Go to System (Windows+Y in Windows 8+ or Windows Server 2012+)
+- Go to System (Windows+X and then Y in Windows 8+ or Windows Server 2012+)
 - Advanced system settings
 - Select Advanced tab
 - Click on Environment Variables button
@@ -76,7 +76,7 @@ But you can install just the DB Engine. In fact that should be the default optio
 
 #### Configure
 
-You can configure the server with the default user or Windows Authentication. In this case we will create a specific bamboodbuser
+You can configure the server with the default user or Windows Authentication. In this case we will create a specific `bamboobduser`
 
 - Security
 - New Login
@@ -90,14 +90,14 @@ You can configure the collation from the New Database dialog:
 - Collation
 - By default is `<default>` (in my case `SQL_Latin1_General_CP1_CI_AS`) you can change it to `Latin1_General_CS_AS` for example
 
-Configure bamboodbuser as bamboo db_owner, go to:
+Configure bamboobduser as bamboo db_owner, go to:
 
 - Security
 - Logins
 - Properties of the user
 - User Mapping
 
-Last we have to configure the database to use the correct isolation level
+Last we have to configure the database to use the correct isolation level by running the following SQL script:
 
     ALTER DATABASE <database name> SET READ_COMMITTED_SNAPSHOT ON WITH ROLLBACK IMMEDIATE;
 
@@ -105,27 +105,27 @@ To verify the changes you can run the following query:
 
     SELECT sd.is_read_committed_snapshot_on FROM sys.databases AS sd WHERE sd.[name] = '<database name>';
 
+It should return a single record `is_read_committed_snapshot_on` with value `1`
+
 The reason for this last chage is because JDBC is generally simpler and the recommended method to configure Bamboo with SQL Server
 
 ## Bamboo Install
 
-First we have to download Bamboo [https://www.atlassian.com/software/bamboo/download]()
+First we have to download Bamboo [https://www.atlassian.com/software/bamboo/download](https://www.atlassian.com/software/bamboo/download)
 
 The latest version at the moment of this write is: 5.12.3.1 build 51215 - 04 Jul 16
 
 The installation process is very straighforward. Just follow the wizard steps. There is only two concepts that we can pay attention and define if we will use the default options or change them: installation and home directory 
 
 
-Installation directory: This is the directory where Bamboo's application files will be installed. The default is: C:\Program Files\Bamboo
+Installation directory: This is the directory where Bamboo's application files will be installed. The default is: `C:\Program Files\Bamboo`
 
-We changed it to: 
-    C:\atlassian\bamboo\base
+We changed it to: `C:\atlassian\bamboo\base`
 
 
-Bamboo home directory: This is the directory where Bamboo will store its configuration data. The default is: C:\Users\<current-user>\Bamboo-home
+Bamboo home directory: This is the directory where Bamboo will store its configuration data. The default is: `C:\Users\<current-user>\bamboo-home`
 
-In our case and following the previous path:
-    C:\atlassian\bamboo\home
+In our case and following the previous path: `C:\atlassian\bamboo\home`
 
 > It could be configured with any path. Just remember to avoid include the home in the same path as the installation directory 
 
@@ -134,8 +134,6 @@ In our case and following the previous path:
 You have to open a console window as an Administrator and run [bamboo-install-dir]\bin\service.bat
 
 In our case:
-
-- Run service.bat
 
     C:\atlassian\bamboo\base\bin\service.bat
     Installing the service 'Bamboo' ...
@@ -148,6 +146,8 @@ In our case:
    
 - Run services.msc   
 - Configure "Atlassian Bamboo Bamboo" startup type to Automatic and Start the service    
+
+> We are using the default user. You can create and configure the service with a specific (restricted) bamboo user
 
 Now you should be able to navigate to http://localhost:8085 
 
