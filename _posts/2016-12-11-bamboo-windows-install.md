@@ -251,4 +251,4 @@ Basically the required configuration is:
 | Use TLS        | True                           |
 
 
-![SMTP Configuration](../img/2016-12-11-bamboo-windows-install/18-smtp-configuration.png)
+![SMTP Configuration](../img/2016-12-11-bamboo-windows-install/18-smtp-config.png)
