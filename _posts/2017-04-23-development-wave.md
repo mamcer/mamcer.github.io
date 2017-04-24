@@ -32,4 +32,4 @@ They definitely left a mark on me, knowledge that I mainly applied in my daily w
 
 Despite I don't have the free time I used to have I still manage to found some to try a new technology or tinker with at least one side project. But since a couple of years I tried to identify the project at the start point: is it a POC, just a test or an application that could see production?
 
-In my case the development wave starts strong with maybe a weekend or nights of intensive coding sessions and then starts to fade with a prototype or the start of another side project. There is a lot of fun and learning in a side project but also there is a lot to learn going to and after production and I'm in that process.
+In my case the development wave used to starts strong with maybe a weekend or nights of intensive coding sessions and then starts to fade with a prototype or the start of another side project. There is a lot of fun and learning in a side project but also there is a lot to learn going to and after production and I'm in that process.
