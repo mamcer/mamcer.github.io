@@ -16,7 +16,7 @@ This step is definitely not mandatory. By default Ubuntu comes with different gr
 	
 ## Git
 
-My first step was to install Git: [https://git-scm.com/]()
+My first step was to install Git: [https://git-scm.com/](https://git-scm.com/)
 
 You can install it from the official repository. It is recommended to update your package catalog before continue:
 
@@ -33,7 +33,7 @@ You can install it from the official repository. It is recommended to update you
 
 ### First time Git setup
 
-At least you need to configure your user name and email. This is mandatory if you later want to make some commits: [https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup]()
+At least you need to configure your user name and email. This is mandatory if you later want to make some commits: [https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
 
 For example: 
 
@@ -43,7 +43,7 @@ For example:
 
 ## NET Core
 
-We can install .NET Core (2.0 at the moment of this writing) following the installation steps from the official documentation: [https://www.microsoft.com/net/core#linuxubuntu]()
+We can install .NET Core (2.0 at the moment of this writing) following the installation steps from the official documentation: [https://www.microsoft.com/net/core#linuxubuntu](https://www.microsoft.com/net/core#linuxubuntu)
 
 ### Install Curl
 
@@ -84,7 +84,7 @@ I choose VSCode as my default .NET Core IDE.
 
 ### Download .deb package
 
-You can download the .deb install package from the official site: [https://code.visualstudio.com/Download?wt.mc_id=DotNet_Home&dotnetid=493278267.1503672714]()
+You can download the .deb install package from the official site: [https://code.visualstudio.com/Download?wt.mc_id=DotNet_Home&dotnetid=493278267.1503672714](https://code.visualstudio.com/Download?wt.mc_id=DotNet_Home&dotnetid=493278267.1503672714)
 
 The latest version at the moment of this writing is VSCode 1.15.1.
 
@@ -109,7 +109,7 @@ This is just a little list of the extensions I like to install first.
 
 ## Docker
 
-[https://www.docker.com/docker-ubuntu]()
+[https://www.docker.com/docker-ubuntu](https://www.docker.com/docker-ubuntu)
 
 ### Update the apt package index
 
