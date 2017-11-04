@@ -6,7 +6,7 @@ subtitle: Using SQL Server on Docker
 
 In this post I will explain all the steps I follow to create a default ASP .NET Core MVC application with Identity using MSSQL Server on Docker.
 
-I'm using a Mac but the same steps (maybe with some slight differences on Windows) could be applied to Linux and Windows.
+> I'm using a Mac but the same steps (maybe with some slightly differences in Windows) should be valid for Linux and Windows.
 
 ## Requirements
 
@@ -18,7 +18,7 @@ I'm using a Mac but the same steps (maybe with some slight differences on Window
 
 Again you can follow the steps from the official site: [https://www.docker.com/docker-mac](https://www.docker.com/docker-mac)
 
-Docker for MSSQL Server requires 4GB. Currently the default is 2GB but you can easily change it in Docker from Mac from the docker logo in the top status bar and select Preferences.
+Docker for MSSQL Server requires 4GB of memory. Currently the default is 2GB but you can easily change it in Docker from Mac from the docker logo in the top status bar and select Preferences.
 
 ![Docker preferences](../img/2017-11-04-core-identity-mssql-docker/01-docker.png)
 
@@ -88,17 +88,19 @@ We can test this steps with docker and running sqlcmd (included in the image) to
     1> select Name from sys.Databases
     2> GO
 
-As a result you should see all the databases, included our CoreDev:
+As a result you should see all the databases, included our just created CoreDev database:
 
     master                                                                                                                          
     tempdb                                                                                                                          
     model                                                                                                                           
     msdb                                                                                                                            
-    CoreDev    
+    *CoreDev*    
 
 We can also query for the tables inside our database:
 
     SELECT TABLE_NAME FROM CoreDev.INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE'
+
+Result
 
     __EFMigrationsHistory                                                                                                           
     AspNetRoles                                                                                                                     
@@ -125,10 +127,14 @@ We can also query for the tables inside our database:
 
 We have installed and configured all the requirements to run our MVC default web application using identity with SQL Server 2017 in docker.
 
+The only step left is basically run the application:
+
     dotnet run --project Core.csproj
 
 Navigate to http://localhost:5000 and create our first account by clicking on Register.
 
 ![Register Account](../img/2017-11-04-core-identity-mssql-docker/02-register.png)
+
+Click on Register and we will be automatically redirected to our Home as the newly created user.
 
 ![Login](../img/2017-11-04-core-identity-mssql-docker/03-login.png)
