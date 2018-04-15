@@ -59,7 +59,7 @@ With the following content according to our previous example.
 
 ## Generate Package
 
-The following step is to generate an initial deployment package. Several ways to do that, one way is from a command line with MSBuild.
+The next step is to generate an initial deployment package. Several ways to do that, one way is from a command line with MSBuild.
 
   MSBuild.exe EmptyApp.sln /p:Configuration=Release /p:DeployOnBuild=true /p:DeployTarget=Package /p:CreatePackageOnBuild=True
 
