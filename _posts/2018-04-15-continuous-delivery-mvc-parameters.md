@@ -15,7 +15,7 @@ The proposed solution is based on WebDeploy and parameter files to generate one 
 
 The same process could be applied to WebForms and WebApi applications.
 
-> Update: There is a [second part of this post](https://mamcer.github.io/2018-04-21-continuous-delivery-mvc-parameters-tfs/) in which I explain how to implement this process in MS Team Foundation Server
+> Update: There is a [second part of this post](https://mamcer.github.io/2018-04-21-continuous-delivery-mvc-parameters-tfs/) in which I explain how to orchestrate this process in MS Team Foundation Server
 
 ## Web Application
 
