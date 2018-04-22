@@ -4,7 +4,7 @@ title: Continuous Delivery ASP .NET MVC Application
 subtitle: TFS implementation
 ---
 
-This is a continuation of my previous post [Continuous Delivery ASP .NET MVC Application](https://mamcer.github.com/)
+This is a continuation of my previous post [Continuous Delivery ASP .NET MVC Application](https://mamcer.github.io/2018-04-15-continuous-delivery-mvc-parameters/)
 
 I will explain step by step how to put in place the Continuous Delivery process explained in my previous post in a Continuous Integration & Delivery tool. In this case Microsoft Team Foundation Server.
 
