@@ -8,6 +8,8 @@ This is a continuation of my previous post [Continuous Delivery ASP .NET MVC App
 
 I will explain step by step how to put in place the Continuous Delivery process explained in my previous post in a Continuous Integration & Delivery tool. In this case Microsoft Team Foundation Server.
 
+You can download or clone the code of the project included in the examples from [GitHub](https://github.com/mamcer/emptyapp).
+
 ## Create a build plan
 
 Our first step is to create a Build Plan. This plan is responsible to generate the artifacts, a deployable version of our application.
@@ -22,11 +24,11 @@ The final task configuration of our build plan should look like:
 
 ![Build Tasks](../img/2018-04-21-continuous-delivery-mvc-parameters-tfs/06-all-tasks.png)
 
-In the next steps we will create every task. If you don't want to create the tasks one by one, you can download, import and use as an starting point at least the following json file. 
+In the next steps we will create every task. If you don't want to create the tasks one by one, you can download, import and use as an starting point at least the [following json file](https://raw.githubusercontent.com/mamcer/emptyapp/master/Doc/EmptyApp%20-%20Continuous%20Delivery.json). 
 
 ### Basic configuration
 
-With basic configuration I refer to configuration like the name of the plan. It could be "[project-name] - Continuous Delivery" in this case but there is no rule here, you can name it as you want.
+With basic configuration I mean things like the name of the plan: it could be "[project-name] - Continuous Delivery" in this case but there is no rule here, you can name it as you want.
 
 Another basic configuration is the repository and the specific branch, in my case master.
 
@@ -36,7 +38,7 @@ And as the last of these basic (common) configurations we can mention the Nuget 
 
 ### Build Solution
 
-The next task is responsible to generate the deployment package of our application. As we are working with an ASP .NET MVC application it's a MSBuild task.
+The next task is responsible to generate the deployment package of our application. As we are working with an ASP .NET MVC application it basically consist on a MSBuild task.
 
 ![MSBuild](../img/2018-04-21-continuous-delivery-mvc-parameters-tfs/03-msbuild.png)
 
@@ -45,6 +47,9 @@ Basically the same MSBuild command explained in my previous post but as a TFS bu
     /m /p:Configuration=Release /p:DeployOnBuild=true /p:DeployTarget=Package /p:CreatePackageOnBuild=True
 
 This will generate a WebDeploy ready to deploy version of the application. In our case in the path `\Src\EmptyApp.Web\obj\Release\Package\`
+
+![Deployment Package Files](../img/2018-04-21-continuous-delivery-mvc-parameters-tfs/13-deployment-package-files.png)
+
 
 ### Copy Artifacts
 
@@ -72,9 +77,9 @@ In order to do that you can add a Publish Build Artifacts task.
 
 In the previous steps we have created a deployable version of our application and put it in a convenient WebDeploy package.
 
-A Release take that package as an input and deploy it to N environments. With different conditions, for example we can configure to deploy to an environment as soon as the package is available (Dev) or require a manual, explicit action to deploy it (QA for example).
+A Release take that package as an input and deploy it to N environments. Taking into account different deployment triggers, for example we can configure to deploy to an environment as soon as the package is available (Dev for example) or require a manual, explicit action to deploy it (QA for example).
 
-In our case this is how it looks our final pipeline. 
+In our case this is how our final pipeline will look. 
 
 ![Release definition](../img/2018-04-21-continuous-delivery-mvc-parameters-tfs/08-release-definition.png)
 
@@ -104,7 +109,7 @@ Arguments:
 
 ## Triggers
 
-In order to have a Continuous Delivery process we need to configure the build and release triggers accordingly.  A continuous delivery schema requires that any change pushed to the repository should trigger a deploy. In order to that we have to configure the Trigger of the Build plan and of the specific Release environment.
+In order to have a Continuous Delivery process we need to configure the build and release triggers accordingly.  A continuous delivery schema requires that any change pushed to the repository should trigger a deploy. In order to that we have to configure the Trigger condition of the Build plan and the specific Release environment.
 
 Build
 
