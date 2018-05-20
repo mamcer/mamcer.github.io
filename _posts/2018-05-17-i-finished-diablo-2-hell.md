@@ -54,8 +54,8 @@ The skeletons do noticeable damage maybe until nightmare difficulty. Then they d
 
 ### Equipment
 
-Nothing fancy here. Even since middle nightmare difficulty I started to focus on magic find it seems I didn’t have enough luck. I found a couple of interesting items but it could had been a lot better. I didn't found [homunculus](http://classic.battle.net/diablo2exp/items/normal/unecromancer.shtml) for example :( I really like the necromancer shrunken heads.
-All my final items were a collection of normal, exceptional and a couple of unique. I have only found the [Trang-Oul's Claws](http://classic.battle.net/diablo2exp/items/sets/sets7.shtml#trangouls), the wand was bought in act 2 nightmare difficulty because of the bonus in my skills.
+Nothing fancy here. Even since middle nightmare difficulty I started to focus on magic find it seems I didn’t have enough luck. I found a couple of interesting items but it could had been a lot better. I didn't found [Homunculus](http://classic.battle.net/diablo2exp/items/normal/unecromancer.shtml) for example :( I really like the necromancer shrunken heads.
+All my final items were a collection of normal, exceptional and a couple of unique. I have only found the [Trang-Oul's Claws](http://classic.battle.net/diablo2exp/items/sets/sets7.shtml#trangouls) from the necromancer set, I bought the wand in act 2 nightmare difficulty because of the bonus in my skills.
 
 ![Items 01](../img/2018-05-17-i-finished-diablo-2-hell/Screenshot238.jpg)
 
