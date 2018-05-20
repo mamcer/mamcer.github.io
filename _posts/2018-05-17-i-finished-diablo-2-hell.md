@@ -26,7 +26,7 @@ That was not the case of  the skills, I knew exactly where to assign each skill 
 
 ![Initial steps](../img/2018-05-17-i-finished-diablo-2-hell/Screenshot001.jpg)
 
-Hell difficulty was the most interesting and real challenge. Without quality items it seems that even the most insignificant foe can kill me and the experience penalty when you die is something to take into account. Act I was relatively easy, Act II was a challenge to get to Duriel  (specially the Arcane Sanctuary area) I really enjoy Act III and IV except from the Council Members and [Black Souls](http://classic.battle.net/diablo2exp/monsters/act5g-willowisp.shtml) I really hate those guys and their electric damage. Act V were difficult, especially the first open areas, the ancients and Baal minions. 
+Hell difficulty was the most interesting and real challenge. Without quality items it seems that even the most insignificant foe can kill me and the experience penalty when you die is something to take into account. Act I was relatively easy, Act II was a challenge to get to Duriel  (specially the Arcane Sanctuary area) I really enjoy Act III and IV except from the [Council Members](http://classic.battle.net/diablo2exp/monsters/act3-councilmember.shtml) and [Black Souls](http://classic.battle.net/diablo2exp/monsters/act5g-willowisp.shtml) (I really hate those guys and their electric damage). Act V were difficult, especially the first open areas, the Ancients and the minions in Baal throne. 
 
 ![Hell difficulty](../img/2018-05-17-i-finished-diablo-2-hell/Screenshot156.jpg)
 
@@ -54,7 +54,7 @@ The skeletons do noticeable damage maybe until nightmare difficulty. Then they d
 
 ### Equipment
 
-Nothing fancy here. Even since middle nightmare difficulty I started to focus on magic find it seems I didn’t have enough luck. I found a couple of interesting items but it could had been a lot better. I didn't found homunculus for example :( I really like the necromancer shrunken heads.
+Nothing fancy here. Even since middle nightmare difficulty I started to focus on magic find it seems I didn’t have enough luck. I found a couple of interesting items but it could had been a lot better. I didn't found [homunculus](http://classic.battle.net/diablo2exp/items/normal/unecromancer.shtml) for example :( I really like the necromancer shrunken heads.
 All my final items were a collection of normal, exceptional and a couple of unique. I have only found the [Trang-Oul's Claws](http://classic.battle.net/diablo2exp/items/sets/sets7.shtml#trangouls), the wand was bought in act 2 nightmare difficulty because of the bonus in my skills.
 
 ![Items 01](../img/2018-05-17-i-finished-diablo-2-hell/Screenshot238.jpg)
