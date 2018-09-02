@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I cleaned up my virtual basement
-subtitle: of archived side projects
+subtitle: Of archived side projects
 ---
 
 Something that I quickly realized and definitely love from my profession (I'm a System Engineer) is how easy and cheap is for us to create compared to other disciplines. I'm not talking about big commercial systems, if you want to build the next GitHub you won't probably go far without some level of real money investment. I'm talking about create something, just because you are learning, trying a technology or building something to address a specific problem. At the very basics you only need a computer, the tools, time and focus.
@@ -46,55 +46,55 @@ They all share the 'Legacy project' repository description in GitHub
 
 2007
 
-[https://github.com/mamcer/countdown](https://github.com/mamcer/countdown)  
-[https://github.com/mamcer/mp3-searcher](https://github.com/mamcer/mp3-searcher)  
+[countdown](https://github.com/mamcer/countdown)  
+[mp3-searcher](https://github.com/mamcer/mp3-searcher)  
 
 2008
 
-[https://github.com/mamcer/am](https://github.com/mamcer/am)  
-[https://github.com/mamcer/arg-holidays](https://github.com/mamcer/arg-holidays)  
-[https://github.com/mamcer/nacion](https://github.com/mamcer/nacion)  
-[https://github.com/mamcer/soulstone](https://github.com/mamcer/soulstone)  
+[am](https://github.com/mamcer/am)  
+[arg-holidays](https://github.com/mamcer/arg-holidays)  
+[nacion](https://github.com/mamcer/nacion)  
+[soulstone](https://github.com/mamcer/soulstone)  
 
 2009
 
-[https://github.com/mamcer/lucky-dev](https://github.com/mamcer/lucky-dev)  
+[lucky-dev](https://github.com/mamcer/lucky-dev)  
 
 2010
 
-[https://github.com/mamcer/great-shot](https://github.com/mamcer/great-shot)  
-[https://github.com/mamcer/isomount](https://github.com/mamcer/isomount)  
-[https://github.com/mamcer/xgamer](https://github.com/mamcer/xgamer)  
+[great-shot](https://github.com/mamcer/great-shot)  
+[isomount](https://github.com/mamcer/isomount)  
+[xgamer](https://github.com/mamcer/xgamer)  
 
 2012
 
-[https://github.com/mamcer/media-center](https://github.com/mamcer/media-center)  
+[media-center](https://github.com/mamcer/media-center)  
 
 2013
 
-[https://github.com/mamcer/execution-engine](https://github.com/mamcer/execution-engine)  
-[https://github.com/mamcer/file-scanner](https://github.com/mamcer/file-scanner)  
-[https://github.com/mamcer/skype-call](https://github.com/mamcer/skype-call)  
+[execution-engine](https://github.com/mamcer/execution-engine)  
+[file-scanner](https://github.com/mamcer/file-scanner)  
+[skype-call](https://github.com/mamcer/skype-call)  
 
 2014
 
-[https://github.com/mamcer/soulstone-2](https://github.com/mamcer/soulstone-2)  
-[https://github.com/mamcer/wcf-rest](https://github.com/mamcer/wcf-rest)  
+[soulstone-2](https://github.com/mamcer/soulstone-2)  
+[wcf-rest](https://github.com/mamcer/wcf-rest)  
 
 2015
 
-[https://github.com/mamcer/bam-api](https://github.com/mamcer/bam-api)  
-[https://github.com/mamcer/isofinder](https://github.com/mamcer/isofinder)  
-[https://github.com/mamcer/mentoring](https://github.com/mamcer/mentoring)  
-[https://github.com/mamcer/usignalr-raspberry](https://github.com/mamcer/usignalr-raspberry)  
-[https://github.com/mamcer/winform-actions](https://github.com/mamcer/winform-actions)  
+[bam-api](https://github.com/mamcer/bam-api)  
+[isofinder](https://github.com/mamcer/isofinder)  
+[mentoring](https://github.com/mamcer/mentoring)  
+[usignalr-raspberry](https://github.com/mamcer/usignalr-raspberry)  
+[winform-actions](https://github.com/mamcer/winform-actions)  
 
 2016
 
-[https://github.com/mamcer/ateam-docs](https://github.com/mamcer/ateam-docs)  
-[https://github.com/mamcer/undead-music](https://github.com/mamcer/undead-music)  
-[https://github.com/mamcer/upictures-net45](https://github.com/mamcer/upictures-net45)  
+[ateam-docs](https://github.com/mamcer/ateam-docs)  
+[undead-music](https://github.com/mamcer/undead-music)  
+[upictures-net45](https://github.com/mamcer/upictures-net45)  
 
 2017
 
-[https://github.com/mamcer/umovies](https://github.com/mamcer/umovies)  
+[umovies](https://github.com/mamcer/umovies)  
