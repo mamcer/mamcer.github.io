@@ -44,57 +44,98 @@ You may think that most of them are trash (and you are most probably right!) to 
 
 They all share the 'Legacy project' repository description in GitHub
 
-2007
+2017
 
-[countdown](https://github.com/mamcer/countdown)  
-[mp3-searcher](https://github.com/mamcer/mp3-searcher)  
-
-2008
-
-[am](https://github.com/mamcer/am)  
-[arg-holidays](https://github.com/mamcer/arg-holidays)  
-[nacion](https://github.com/mamcer/nacion)  
-[soulstone](https://github.com/mamcer/soulstone)  
-
-2009
-
-[lucky-dev](https://github.com/mamcer/lucky-dev)  
-
-2010
-
-[great-shot](https://github.com/mamcer/great-shot)  
-[isomount](https://github.com/mamcer/isomount)  
-[xgamer](https://github.com/mamcer/xgamer)  
-
-2012
-
-[media-center](https://github.com/mamcer/media-center)  
-
-2013
-
-[execution-engine](https://github.com/mamcer/execution-engine)  
-[file-scanner](https://github.com/mamcer/file-scanner)  
-[skype-call](https://github.com/mamcer/skype-call)  
-
-2014
-
-[soulstone-2](https://github.com/mamcer/soulstone-2)  
-[wcf-rest](https://github.com/mamcer/wcf-rest)  
-
-2015
-
-[bam-api](https://github.com/mamcer/bam-api)  
-[isofinder](https://github.com/mamcer/isofinder)  
-[mentoring](https://github.com/mamcer/mentoring)  
-[usignalr-raspberry](https://github.com/mamcer/usignalr-raspberry)  
-[winform-actions](https://github.com/mamcer/winform-actions)  
+[umovies](https://github.com/mamcer/umovies)  
+A collection of applications to remotely play and control media files
 
 2016
 
 [ateam-docs](https://github.com/mamcer/ateam-docs)  
+A best practices documentation site. An example implementation of a documentation continuous delivery schema.  
+
 [undead-music](https://github.com/mamcer/undead-music)  
+An application to create playlists and control the playback of music on remote computers in real time  
+
 [upictures-net45](https://github.com/mamcer/upictures-net45)  
+A web application that scan, process and allows easily search, tag and view pictures and videos from a media collection
 
-2017
+2015
 
-[umovies](https://github.com/mamcer/umovies)  
+[bam-api](https://github.com/mamcer/bam-api)  
+Using Atlassian Bamboo rest api it shows several best practices metrics  
+
+[isofinder](https://github.com/mamcer/isofinder)  
+Scan and index iso files allowing search and content download through a web application
+
+[mentoring](https://github.com/mamcer/mentoring)  
+A web application that help on the implementation of a company internal employee mentoring program
+
+[usignalr-raspberry](https://github.com/mamcer/usignalr-raspberry)  
+It allows remotely play music on a Raspberry Pi
+
+[winform-actions](https://github.com/mamcer/winform-actions)  
+An application that demo different Winforms desktop application functionalities
+
+2014
+
+[soulstone-2](https://github.com/mamcer/soulstone-2)  
+Allows to manage different hosts (which provides music), manage playlists and playback of files remotely
+
+[wcf-rest](https://github.com/mamcer/wcf-rest)  
+An example of how to implement a REST api with WCF
+
+2013
+
+[execution-engine](https://github.com/mamcer/execution-engine)  
+An intent to create a generic task execution library (I use it in other small projects)
+
+[file-scanner](https://github.com/mamcer/file-scanner)  
+A library that provides file system scan and analysis funtionality (I use in other projects like IsoFinder)
+
+[skype-call](https://github.com/mamcer/skype-call)  
+A POC application, you click on a web application link and your home media center video call you using Skype
+
+2012
+
+[media-center](https://github.com/mamcer/media-center)  
+Responsive web application to remotely control playback of media files in a media center
+
+2010
+
+[great-shot](https://github.com/mamcer/great-shot)  
+An application to quickly select your best pictures
+
+[isomount](https://github.com/mamcer/isomount)  
+A wrapper of slysoft Virtual Clone Drive to quickly mount iso files
+
+[xgamer](https://github.com/mamcer/xgamer)  
+A GUI to play retro games
+
+2009
+
+[lucky-dev](https://github.com/mamcer/lucky-dev)  
+A WPF application that connects to Microsoft TFS and help you select the best code reviewer candidate from the team according to code reviews already assigned
+
+2008
+
+[am](https://github.com/mamcer/am)  
+An application to play mp3 files with full keyboard control. Almost no UI, intended to be a good coding sessions companion with no disruption of the current task 
+
+[arg-holidays](https://github.com/mamcer/arg-holidays)  
+It connects to a WCF service and allows you to see information of upcoming (or past) Argentinian holidays
+
+[nacion](https://github.com/mamcer/nacion)  
+A simple web application to see information about a mortgage loan, a simulator to estimate interest earned, etc. Specifically instantiated with my mortgate loan at that moment.
+
+[soulstone](https://github.com/mamcer/soulstone)  
+A Silverlight application to play music in your browser 
+
+2007
+
+[countdown](https://github.com/mamcer/countdown)  
+A simple countdown application for my wedding
+
+[mp3-searcher](https://github.com/mamcer/mp3-searcher)  
+Scan an index Windows network shared folders looking for mp3 files. Then it allows to search and play them
+
