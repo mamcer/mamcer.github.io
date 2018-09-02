@@ -20,7 +20,7 @@ This solution structure was evolving through years and there is no reason to sto
 
 > About the opening curly brace, we all know it should be in it is own line. This is not Java.. joke
 
-## Solution Structure
+## Folder Structure
 
 This is something I changed several times through the years. Also directly related with the source control system in use: trunk, branches and tags with SVN, Main, Dev and Release with TFS, etc. But that was many years ago. With Git (or any other descentralized SCM) you can have a more cleaner root folder. The proposed configuration is standard (I should add `test`) plus a `tool` directory, details below.
 
@@ -39,9 +39,11 @@ I really like the console/terminal. That is why I usually include several .cmd f
 
 ![cmd files](https://raw.githubusercontent.com/mamcer/atm-fun/master/doc/cmd-files.png)
 
-## Code
+## Solution Structure
 
 You can try to implement all the DDD layers in every project, I did. But for small/medium size projects I like the following standard structure (names can vary)
+
+![cmd files](https://raw.githubusercontent.com/mamcer/atm-fun/master/doc/solution-structure.png)
 
 **Application**: Implement services which have direct access to the data layer. This layer can be directly consumed by a Web application or REST api for example, to expose those services.  
 **Core**: Contains main application entities.  
