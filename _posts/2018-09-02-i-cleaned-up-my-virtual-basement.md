@@ -18,13 +18,13 @@ POCs, MVPs, get to the RTM point.
 
 Have the opportunity to work on technologies years before I had the opportunity to work with them in a paid job (some of them I never had the opportunity). Not in particular order: TFS, Mercurial, Git, WPF, Silverlight, Windows Phone applications, WebForms, ASP NET MVC, WebAPI, Continuous Integration/Delivery/Inspection, IIS configuration, VMs with different Linux distributions, AngularJS, Docker, .NET Core, SonarQube, real time functionality with SignalR, unit testing with mstest, xunit, etc etc
 
-I learnt a lot of .NET just by testing the latest framework features as POCs or take a new release as an excuse to upgrade a previous side project (or completely rewrite it). I remember to have TFS in a virtual machine on my 2GB of ram laptop. Installing Atlassian JIRA, Bamboo and Crucible in my media center. Implement a continuous integration process in TF Online (Now Visual Studio Team Services). Playing with Git (working with VS Express for Web) years before I have the opportunity to use it in a job environment. Deploy web applications to local VMs running different Windows Server versions. And again a long etcetera.
+I learned a lot of .NET just by testing the latest framework features as POCs or take a new release as an excuse to upgrade a previous side project (or completely rewrite it). I remember to have TFS in a virtual machine on my 2GB of ram laptop. Installing Atlassian JIRA, Bamboo and Crucible in my media center. Implement a continuous integration process in TF Online (Now Visual Studio Team Services). Playing with Git (working with VS Express for Web) years before I have the opportunity to use it in a job environment. Deploy web applications to local VMs running different Windows Server versions. And again a long etcetera.
 
-Also have to mention the countless of medium/large systems implementing the latest technologies designed in paper that never reached even the MVP level. 
+Also have to mention the countless medium/large systems designed in paper and implementing the latest technologies that never reached even the MVP level. 
 
 ## The Basement
 
-Well, the experience and learning is something that becomes part of you. But at some point last year (2017) I went down to my virtual basement where all the projects were archived. I took a look and realized, first that they were many of them, they were at different level of completeness, some of them still current, a good number outdated/obsolete and all representing hours or days of work. Finally they also share something: they were all there, hidden.
+The experience and learning is something that becomes part of you. But at some point last year (2017) I went down to my virtual basement where all the projects were archived. I took a look and realized, first that they were many of them, they were at different level of completeness, some of them still current, a good number outdated/obsolete but all representing hours or days of work. Finally they also share something: they were all there, hidden.
 
 ## The Selection
 
@@ -32,7 +32,7 @@ I found zip files with code in backups disks, private repositories in Visual Stu
 
 From the application perspective I found C++ programs from early 2000 to 'modern' .NET web applications and rest api from 2017. 
 
-Near the end of 2017 I finished a list of the project I wanted to publish in GitHub. Initially I expected to have all of them migrated by the end of January 2018, then March, and then.. well it took a little more time but it is done. Initially I started to review them, reorganize the code, implement some cleanups and refactors with some ReSharper help, run SonarQube analysis and fix rules, add unit tests to increase coverage, etc. Then realized it will take me almost another ten years to finish so I published them with an original untouched branch and master with some level of reorder, cleanups and refactors (no SonarQube or code coverage improvement for most of them)
+Near the end of 2017 I finished a list of the project I wanted to publish in GitHub. Initially I expected to have all of them migrated by the end of January 2018, then March, and then.. well, it took a little more time but it is done. Initially I started to review them, reorganize the code, implement some cleanups and refactors with ReSharper help, run SonarQube analysis and fix rules, add unit tests to increase coverage, etc. Then realized it will take me almost another ten years to finish so I published them with an original untouched branch and master with some level of reorder, cleanups and refactors (no SonarQube or code coverage improvement for most of them)
 
 ## The Final Result
 
