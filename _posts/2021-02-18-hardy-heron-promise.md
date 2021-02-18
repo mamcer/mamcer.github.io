@@ -18,6 +18,8 @@ On january 2021 I ended up being an owner of an Aspire One netbook with 1GB of R
 
 Then I remembered my 'promise' and looked for a Hardy Heron installation image
 
+![aspire ubuntu](../img/2021-02-18-hardy-heron-promise/IMG_20210202_112610.jpg)
+
 ![hardy heron](../img/2021-02-18-hardy-heron-promise/Screenshot-3.png)
 
 ![ubuntu for human beings](../img/2021-02-18-hardy-heron-promise/Screenshot-9.png)
