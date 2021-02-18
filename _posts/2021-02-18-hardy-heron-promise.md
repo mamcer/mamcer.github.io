@@ -18,9 +18,9 @@ On january 2021 I ended up being an owner of an Aspire One netbook with 1GB of R
 
 Then I remembered my 'promise' and looked for a Hardy Heron installation image
 
-![hardy heron](../img/2021-02-18_hardy-heron-promise/Screenshot-3.png)
+![hardy heron](../img/2021-02-18-hardy-heron-promise/Screenshot-3.png)
 
-![ubuntu for human beings](../img/2021-02-18_hardy-heron-promise/Screenshot-9.png)
+![ubuntu for human beings](../img/2021-02-18-hardy-heron-promise/Screenshot-9.png)
 
 Wifi was not recognized worked only Ethernet but apart from that I had an Ubuntu 0804 installation that 'felt' and worked very good on the hardware
 
@@ -28,7 +28,7 @@ My first real commitment to Linux was in 2010 with Lucid Lynx, still as a .NET d
 
 As an extra, Golang worked 
 
-![golang](../img/2021-02-18_hardy-heron-promise/Screenshot-11.png)
+![golang](../img/2021-02-18-hardy-heron-promise/Screenshot-11.png)
 
 12 years later but no one can say that I do not keep my promises, well at least not over this one :)
 
