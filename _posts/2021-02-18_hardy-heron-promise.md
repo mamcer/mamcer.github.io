@@ -12,7 +12,7 @@ Also back in that time I had a coworker fully commited to open source and open t
 
 I had the opportunity to work with Linux on 2005 when working on Ruby applications. I saw Linux as things done rigth, rock solid technology, for power users, people that knows what are they doing. Part of me wanted to be one of them, but none of my tools or developer technologies worked on that platform. In any case I almost promised him to give it a try and install side by side with my Windows Vista main installation over the weekend
 
-Well I've never fulfill that promise, at least not until now
+I never kept that promise, at least not until now
 
 On january 2021 I ended up being an owner of an Aspire One netbook with 1GB of RAM and an Intel Atom N270 processor. A dated obsolete Windows 7 installation that worked far below acceptable was screaming for a change. I tried Ubuntu 1604 and Debian 9 with XFCE. None of them were the best experience on such limited hardware, specially from memory consumption
 
@@ -31,3 +31,4 @@ As an extra, Golang worked
 ![golang](../img/2021-02-18_hardy-heron-promise/Screenshot-11.png)
 
 12 years later but no one can say that I do not keep my promises, well at least not over this one :)
+
