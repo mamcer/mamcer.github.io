@@ -40,7 +40,7 @@ All commands:
     ASSIGN
     EXIT
 
-> All steps are almost immediate except format will take some minutes
+> All steps are almost immediate except `format` that will surely take some minutes
 
 ![format](../img/2021-04-24-boot-flashdrive-old-school/02_format.PNG)
 
