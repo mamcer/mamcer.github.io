@@ -48,7 +48,7 @@ All commands:
 
 [https://www.microsoft.com/en-us/software-download/windows10ISO](https://www.microsoft.com/en-us/software-download/windows10ISO)
 
-Remember that you can play with the developer tools, network conditions, user-agent to donwload the ISO file directly instead of the Windows 10 Upgrade tool
+Remember that you can play with the developer tools, network conditions, user-agent to download the ISO file directly instead of the Windows 10 Upgrade tool
 
 In recent versions of Windows mount an iso file is as easy as double click the file and it will appear as another unit. No mandatory need of tools like [Virtual Clone Drive](https://www.elby.ch/en/products/vcd.html) 
 
