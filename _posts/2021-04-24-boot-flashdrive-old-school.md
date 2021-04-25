@@ -14,7 +14,7 @@ What you will need: a flash drive (back in my time with 4GB was more than enough
 
 Open cmd.exe as Administrator. Windows menu, search for cmd right click > Run as administrator
 
-![cmd as administrator](../img/2021-04-24-boot-flashdrive-old-school/06_cmd-admin.png)
+![cmd as administrator](../img/2021-04-24-boot-flashdrive-old-school/06_cmd-admin.PNG)
 
 or instead of right click: ctrl-shift-enter
 
@@ -22,7 +22,7 @@ or instead of right click: ctrl-shift-enter
 
 Run Diskpart
 
-![diskpart](../img/2021-04-24-boot-flashdrive-old-school/01_diskpart.png)
+![diskpart](../img/2021-04-24-boot-flashdrive-old-school/01_diskpart.PNG)
 
 List disk will show all your disks. Select the flash drive unit, in my case 'Disk 2'
 
@@ -42,7 +42,7 @@ All commands:
 
 > All steps are almost immediate except format will take some minutes
 
-![format](../img/2021-04-24-boot-flashdrive-old-school/02_format.png)
+![format](../img/2021-04-24-boot-flashdrive-old-school/02_format.PNG)
 
 ## Windows ISO
 
@@ -52,7 +52,7 @@ Remember that you can play with the developer tools, network conditions, user-ag
 
 In recent versions of Windows mount an iso file is as easy as double click the file and it will appear as another unit. No mandatory need of tools like ![Virtual Clone Drive](https://www.elby.ch/en/products/vcd.html) 
 
-![mount iso](../img/2021-04-24-boot-flashdrive-old-school/03_windows.png)
+![mount iso](../img/2021-04-24-boot-flashdrive-old-school/03_windows.PNG)
 
 ## Copy files
 
@@ -64,6 +64,6 @@ or robocopy
 
     robocopy /e F: G:
 
-![format](../img/2021-04-24-boot-flashdrive-old-school/05_xcopy-progress.png)
+![format](../img/2021-04-24-boot-flashdrive-old-school/05_xcopy-progress.PNG)
 
 And that is all, you should be able to boot from this flashdrive and install Windows
