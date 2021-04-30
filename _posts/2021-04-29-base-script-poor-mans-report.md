@@ -4,7 +4,7 @@ title: Base Windows Script
 subtitle: and Poor Man's Report
 ---
 
-Continuing with the series of old MS Windows stories I found a shell script that I used as a base for several scripts maily for CI/CD tasks
+Continuing with the series of old MS Windows stories I found a shell script that I used as a base for several scripts mainly to automatize CI/CD tasks
 
 This script was made from reviewing other coworkers scripts and example scripts from the Internet
 
@@ -58,7 +58,7 @@ This script was made from reviewing other coworkers scripts and example scripts 
 
 As an example here is a poor man's way to generate a daily metric report from a Silverlight report application (that old)
 
-the application didn't support any report functionality, I didn't have access to it is database then as a quick solution I created this script and with some irfan_view help and a Windows scheduled task I was able to automatically open the application and take a daily screenshot of the metrics
+The application didn't support any report functionality, I didn't have access to it is database then as a quick solution I created this script and with some irfan_view help and a Windows scheduled task I was able to automatically open the application and take a daily screenshot of the metrics results
 
     echo off
 
