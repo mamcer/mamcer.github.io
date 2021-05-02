@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sonar Qube Email Report Application
+title: SonarQube Email Report Application
 subtitle: .NET Core
 ---
 
