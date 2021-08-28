@@ -20,7 +20,7 @@ After that you will need to create a project and define e project key: `sonarqub
 
 ![sonarqube-create-project](../img/2021-05-01-sonar-qube-email-report/01-sonarqube-create-project.png)
 
-## Sonar Scanner
+## SonarQube Scanner
 
 > In this case we will use the .NET Core SonarScanner (we will be analyzing the same application code) but there are [SonarScanner](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/) support for different technologies and platforms
 
