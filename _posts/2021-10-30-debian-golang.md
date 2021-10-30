@@ -46,25 +46,6 @@ logout
 
     sudo apt install git
 
-## configure firefox
-
-[https://markosaric.com/firefox/](https://markosaric.com/firefox/)  
-
-## visual studio code
-
-Go to [https://code.visualstudio.com/](https://code.visualstudio.com/)
-download .deb package (latest current version 1.4)
-
-    sudo dpkg -i code_1.40.2-1574694120_amd64.deb
-
-## connect android phone	
-
-install jmtpfs
-
-    apt-get install jmtpfs
-    mkdir ~/nokia
-    jmtpfs ~/nokia
-
 ## install go
 
 download Go (latest current version 1.13.4)
@@ -133,13 +114,32 @@ add your user to docker group (no need for sudo to run docker commands)
 
     sudo usermod -aG docker $USER
 
+## visual studio code
+
+Go to [https://code.visualstudio.com/](https://code.visualstudio.com/)
+download .deb package (latest current version 1.4)
+
+    sudo dpkg -i code_1.40.2-1574694120_amd64.deb
+
 ## extra: appearance
 
 [https://www.gnome-look.org/p/1214931/](https://www.gnome-look.org/p/1214931/)
 
 my selected option was: Flat-Remix-GTK-Blue-Dark-Solid
 
-## Final thoughts
+## extra: configure firefox
+
+[https://markosaric.com/firefox/](https://markosaric.com/firefox/)  
+
+## extra: connect android phone	
+
+install jmtpfs
+
+    apt-get install jmtpfs
+    mkdir ~/nokia
+    jmtpfs ~/nokia
+
+## final thoughts
 
 With only 2 gb of ram memory sometimes it struggle to run VS Code and for example a Web browser at the same time.. 
 You can replace VSCode with a less resource hungry option like Vim and a plugin like [vim-go](https://github.com/fatih/vim-go) for example, but in my case at least I'm not that kind of power user yet
