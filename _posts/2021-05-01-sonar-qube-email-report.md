@@ -4,7 +4,7 @@ title: SonarQube Email Report Application
 subtitle: .NET Core
 ---
 
-In this short blog post I want to present a little application I made around three years ago. At that moment I was working on a small team developing a .NET full framework application and we used SonarQube to measure technical metrics. You can always explicitly navigate to the project dashboard but I wanted to have a daily summary in my inbox. The version of SonarQube that we had didn't support that functionality so based on a previous full .NET framework application were I was playing with the SonarQube server rest API I built this little .NET Core application to get SonarQube metric email reports in my inbox
+In this short blog post I want to present a [little application](https://github.com/mamcer/sonarqube-report) I made around three years ago. At that moment I was working on a small team developing a .NET full framework application and we used SonarQube to measure technical metrics. You can always explicitly navigate to the project dashboard but I wanted to have a daily summary in my inbox. The version of SonarQube that we had didn't support that functionality so based on a previous full .NET framework application were I was playing with the SonarQube server rest API I built this little .NET Core application to get SonarQube metric email reports in my inbox
 
 ## SonarQube
 
