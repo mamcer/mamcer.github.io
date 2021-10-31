@@ -12,7 +12,7 @@ In this example I'm using Azure but the same steps could be applied to any Ubunt
 
 We will skip some steps here Home > Virtual Machines > Add 
 
-![add-new-azure-vm](../img/2021-10-31_net-core-linux-dev-server/01-new-azure-vm.png)
+![add-new-azure-vm](../img/2021-10-31-net-core-linux-dev-server/01-new-azure-vm.png)
 
 In this case I have created a Standard B2s (2 vcpus, 4 GB memory)
 
@@ -24,7 +24,7 @@ After Azure finishes provisioning the VM we can have access to the public IP add
 
     ssh [user]@[public-ip]
 
-![ssh-connection](../img/2021-10-31_net-core-linux-dev-server/02-ssh-connect.png)
+![ssh-connection](../img/2021-10-31-net-core-linux-dev-server/02-ssh-connect.png)
 
 ## Set Timezone
 
@@ -116,7 +116,7 @@ Azure open port 80
 
 VM > Networking > Add inbound security rule
 
-![azure-open-port](../img/2021-10-31_net-core-linux-dev-server/03-azure-open-port.png)
+![azure-open-port](../img/2021-10-31-net-core-linux-dev-server/03-azure-open-port.png)
 
 We can navigate to our public ip address to see the default nginx Welcome page and check installation.
 
