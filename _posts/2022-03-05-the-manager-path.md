@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Manager's Path
+title: The Manager's Path (tm)
 subtitle: Notes and learnings of my path as IT Manager
 ---
 
@@ -15,7 +15,7 @@ Your team is your most precious treasure
 ![my-precious](https://cdna.artstation.com/p/assets/images/images/007/415/052/large/renita-alcordo-ahhhhh-2.jpg)
 > credits: [https://www.artstation.com/artwork/ldZoz](https://www.artstation.com/artwork/ldZoz)
 
-Well, maybe gollum is an exageration. But we will work every day, face challenges and hard work to meet our goals together
+Well, maybe gollum is an exaggeration. But we will work every day, face challenges and share hard work to meet our goals together
 
 You should spend an appropiate and continuous time building the team, looking for and hiring new team members, understanding interests, strong points, areas of improvement and grow interests. Teaching but most important, learning from your team and growing togheter
 
@@ -59,10 +59,10 @@ Every story is different. In my case the technologies were different also my pas
 
 The followowing topics are all still work in progress:
 
-**Culture:** totally underrated by me. It took me time to understand how people work, interactions, time, expectations, how things are done
-**Understand who is who:** who to talk, critical paths, how to successfully complete an initiative on time creating bridges instead of getting close to burning them 
-**Build a team:** another topic completeley underrated by me. It took me time and hard work to find good people and also another not insignificant amount of time for the ramp up and get them feel confident and confortable. In another companies I worked before there was a separated team dedicated to hiring. Here it also exists but you are supposed to be hunting people. Initially it was a shock for me mainly because of the extra work, but now it makes complete sense from the beginning to have responsibility in the team that we put together and with which we are going to work every day
-**Understand technologies:** technologies and many technical topics were taken for granted. With a different technical background it took me time and still takes to catch up 
+**Culture:** totally underrated by me. It took me time to understand how people work, interactions, time, expectations, how things are done  
+**Understand who is who:** who to talk, critical paths, how to successfully complete an initiative on time creating bridges instead of getting close to burning them   
+**Build a team:** another topic completeley underrated by me. It took me time and hard work to find good people and also another not insignificant amount of time for the ramp up and get them feel confident and confortable. In another companies I worked before there was a separated team dedicated to hiring. Here it also exists but you are supposed to be hunting people. Initially it was a shock for me mainly because of the extra work, but now it makes complete sense from the beginning to have responsibility in the team that we put together and with which we are going to work every day  
+**Understand technologies:** technologies and many technical topics were taken for granted. With a different technical background it took me time and still takes to catch up  
 **Generate critical mass results:** It takes time to get a critical mass results, no shortcuts here. At least not for me, it took me time and a lot of help to get tangible results
 
 ## Final thoughts
