@@ -67,7 +67,7 @@ The followowing topics are all still work in progress:
 
 ## Final thoughts
 
-Some of the topics mentioned were known but also completely underrated by me, another I learnt in the process by mistakes. For example trying to compare and match your team in structure, capacity and results with another team in a different level of evolution. Maybe with 3 or 5 more years than yours
+Some of the topics mentioned were known but also completely underrated by me, others I learnt in the process through mistakes. For example trying to compare and match your team in structure, capacity and results with another team in a different level of evolution. Maybe with 3 or 5 more years than yours
 
 Hope someone in a similar career stage would find some of these topics useful. In my case what worked or through error now I know will be more effective is to get focus on your team, take challenges according to their size and evolution stage, understand the business and with patiente invest and re invest thinking long term and expecting concrete results maybe several quarters later
 
