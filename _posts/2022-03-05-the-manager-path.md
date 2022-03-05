@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Manager's Path (tm)
+title: The Manager's Path™
 subtitle: Notes and learnings of my path as IT Manager
 ---
 
