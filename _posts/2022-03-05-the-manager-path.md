@@ -4,7 +4,7 @@ title: The Manager's Path (tm)
 subtitle: Notes and learnings of my path as IT Manager
 ---
 
-Two years and a half ago I accepted a position as an IT Manager. Before that I was working on different technology companies with positions like developer, devops, software architect and technical lead. Since 2013 also on positions that involves a different level of management, always technical and working mainly with remote teams 
+Two years and a half ago I accepted a position as an IT Manager. Before that I was working on different technology companies with positions like developer, devops, software architect and technical lead. Since 2013 also on positions that involved different level of management, always technical and working mainly with remote teams 
 
 These are some notes about my learnings on the path to become a better manager (work in progress), personal experience and challenges
 
@@ -15,7 +15,7 @@ Your team is your most precious treasure
 ![my-precious](https://cdna.artstation.com/p/assets/images/images/007/415/052/large/renita-alcordo-ahhhhh-2.jpg)
 > credits: [https://www.artstation.com/artwork/ldZoz](https://www.artstation.com/artwork/ldZoz)
 
-Well, maybe gollum is an exaggeration. But we will work every day, face challenges and share hard work to meet our goals together
+Well, maybe gollum is an exaggeration. But we will work every day, face challenges and share hard work loads to meet our goals together
 
 You should spend an appropiate and continuous time building the team, looking for and hiring new team members, understanding interests, strong points, areas of improvement and grow interests. Teaching but most important, learning from your team and growing togheter
 
