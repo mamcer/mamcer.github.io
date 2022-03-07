@@ -62,7 +62,7 @@ The following topics are all still work in progress:
 **Culture:** totally underrated by me. It took me time to understand how people work, interactions, time, expectations, how things are done  
 **Understand who is who:** who to talk, critical paths, how to successfully complete an initiative on time creating bridges instead of getting close to burning them   
 **Build a team:** another topic completeley underrated by me. It took me time and hard work to find good people and also another not insignificant amount of time for the ramp up and get them feel confident and confortable. In another companies I worked before there was a separated team dedicated to hiring. Here it also exists but you are supposed to be hunting people. Initially it was a shock for me, mainly because of the extra work, but now it makes complete sense to have responsibility since the beginning in the team that we put together and with which we are going to work every day  
-**Understand technologies:** technologies and many technical topics were taken for granted. With a different technical background it took me time and still takes to catch up  
+**Understand technologies:** technologies and many technical topics were taken for granted. With a different technical background it took me time (and still takes) to catch up  
 **Generate critical mass results:** It takes time to get a critical mass results, no shortcuts here. At least not for me, it took me time and a lot of help to get tangible results
 
 ## Final thoughts
