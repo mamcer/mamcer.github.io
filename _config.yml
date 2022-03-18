@@ -75,7 +75,7 @@ url-pretty: "mamcer.github.com"  # eg. "deanattali.com/beautiful-jekyll"
 disqus: "https-mamcer-github-io"
 
 # Fill in your Google Analytics ID to track your website using GA
-google_analytics: "G-9LPDPB3RHP"
+google_analytics: "UA-223321843-1"
 
 # Facebook App ID
 # fb_app_id: ""
