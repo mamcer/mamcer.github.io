@@ -4,7 +4,7 @@ title: If you know Kung Fu
 subtitle: Then show it
 ---
 
-I remember in my childhood situations where my mom or dad explicitly told me or somehow demonstrated I was special or very good in some subjects, little subjects in some cases. Like tinkering things, at school, running fast..
+I remember in my childhood situations when my mom or dad explicitly told me or somehow demonstrated I was special or very good at something, little subjects in some cases. Like tinkering things, at school, running fast..
 
 I think it is the right thing to do, especially with your kids, to show recognition, pride, explicitly show how much you love them and how her/his effort at the school, playing a sport, specific activity, etc doesn't go unnoticed. Contribute to her/his emotional bank account
 
@@ -26,7 +26,7 @@ Always stay curious, embracing mistakes and also with a humble attitude, sincere
 
 We are all special in different ways, we are all unique and also we are all just people trying to do their best and learning from our own mistakes. If you know Kung Fu, whatever your Kung Fu is, then show it
 
-![i-know-fung-fu](https://cdna.artstation.com/p/assets/images/images/007/415/052/large/renita-alcordo-ahhhhh-2.jpg)
+![i-know-fung-fu](https://static.wikia.nocookie.net/matrix/images/b/b1/I_Know_Kung_Fu.png)
 > credits: [https://matrix.fandom.com/wiki/Main_Page](https://matrix.fandom.com/wiki/Main_Page)
 
 You will fight, you will learn new tricks from other people, you will lose, you will grow, you will try again and occasionally you will win and feel that big rewarding feeling, especially when it's a team achievement
