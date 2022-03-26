@@ -26,6 +26,7 @@ Always stay curious, embracing mistakes and also with a humble attitude, sincere
 
 We are all special in different ways, we are all unique and also we are all just people trying to do their best and learning from our own mistakes. If you know Kung Fu, whatever your Kung Fu is, then show it
 
-<iframe width="1440" height="632" src="https://www.youtube.com/embed/0YhJxJZOWBw?t=54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![i-know-kung-fu](../img/2022-03-26-if-you-know-kung-fu/i-know-kung-fu.png)
+> [https://youtu.be/0YhJxJZOWBw](https://youtu.be/0YhJxJZOWBw?t=54)
 
 You will fight, you will learn new tricks from other people, you will lose, you will grow, you will try again and occasionally you will win and feel that big rewarding feeling, especially when it's a team achievement
