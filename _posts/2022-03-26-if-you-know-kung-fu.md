@@ -26,7 +26,7 @@ Always stay curious, embracing mistakes and also with a humble attitude, sincere
 
 We are all special in different ways, we are all unique and also we are all just people trying to do their best and learning from our own mistakes. If you know Kung Fu, whatever your Kung Fu is, then show it
 
-![i-know-fung-fu](https://static.wikia.nocookie.net/matrix/images/b/b1/I_Know_Kung_Fu.png)
+![i-know-fung-fu](https://static.wikia.nocookie.net/matrix/images/b/b1/I_Know_Kung_Fu.png/revision/latest/scale-to-width-down/853?cb=20130130061639)
 > credits: [https://matrix.fandom.com/wiki/Main_Page](https://matrix.fandom.com/wiki/Main_Page)
 
 You will fight, you will learn new tricks from other people, you will lose, you will grow, you will try again and occasionally you will win and feel that big rewarding feeling, especially when it's a team achievement
