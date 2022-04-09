@@ -36,7 +36,7 @@ Near the end of 2017 I finished a list of the project I wanted to publish in Git
 
 ## The Final Result
 
-A curated list of twenty five projects from early 2007 to 2017 published on GitHub. 
+A curated list of twenty five projects from early 2007 to 2018 published on GitHub. 
 
 You may think that most of them are trash (and you are most probably right!) to me it was like an enjoyable time travel task and in some way gratifyingly like when you finish something that for some reason you postponed for a long time. 
 
@@ -44,98 +44,131 @@ You may think that most of them are trash (and you are most probably right!) to 
 
 They all share the 'Legacy project' repository description in GitHub
 
+> Update (2022--04-09): I removed them from Github to basically reduce de amount of repositories with no changes. You can download all this source code from [here](https://drive.google.com/file/d/1_Cs2Q571OsGx7E7yPuMQdXfNM_UqFeut/view?usp=sharing)
+
+2018 
+
+[upictures](https://drive.google.com/file/d/1_Cs2Q571OsGx7E7yPuMQdXfNM_UqFeut/view?usp=sharing)  
+A .NET Core app to manage a picture collection. Like most of the applications in this list 
+technology: C#, .NET Core 2.1
+
 2017
 
-[umovies](https://github.com/mamcer/umovies)  
-A collection of applications to remotely play and control media files
+[umovies](https://drive.google.com/file/d/1_Cs2Q571OsGx7E7yPuMQdXfNM_UqFeut/view?usp=sharing)  
+A collection of applications to remotely play and control media files  
+technologies: C#, .Net 4.5.2, SignalR 2.2.1, Entity Framework 6.1.3, SQL Server Express 2014
 
 2016
 
-[ateam-docs](https://github.com/mamcer/ateam-docs)  
+[ateam-docs](https://drive.google.com/file/d/1_Cs2Q571OsGx7E7yPuMQdXfNM_UqFeut/view?usp=sharing)  
 A best practices documentation site. An example implementation of a documentation continuous delivery schema.  
+technologies: [sphinx-doc](https://www.sphinx-doc.org/en/master/)
 
-[undead-music](https://github.com/mamcer/undead-music)  
-An application to create playlists and control the playback of music on remote computers in real time  
+[undead-music](https://drive.google.com/file/d/1_Cs2Q571OsGx7E7yPuMQdXfNM_UqFeut/view?usp=sharing)  
+An application to create playlists and control the playback of music on remote computers in real time   
+technologies: C#, .NET Framework 4.5.2, Entity Framework 6.1, SignalR 2.2, SQL Server
 
-[upictures-net45](https://github.com/mamcer/upictures-net45)  
-A web application that scan, process and allows easily search, tag and view pictures and videos from a media collection
+[upictures-net45](https://drive.google.com/file/d/1_Cs2Q571OsGx7E7yPuMQdXfNM_UqFeut/view?usp=sharing)  
+A web application that scan, process and allows easily search, tag and view pictures and videos from a media collection  
+technologies: C#, Entity Framework 6.1, SQL Server 2014
 
 2015
 
-[bam-api](https://github.com/mamcer/bam-api)  
+[bam-api](https://drive.google.com/file/d/1_Cs2Q571OsGx7E7yPuMQdXfNM_UqFeut/view?usp=sharing)  
 Using Atlassian Bamboo rest api it shows several best practices metrics  
+technologies: C#, .NET Framework 4.0
 
-[isofinder](https://github.com/mamcer/isofinder)  
-Scan and index iso files allowing search and content download through a web application
+[isofinder](https://drive.google.com/file/d/1_Cs2Q571OsGx7E7yPuMQdXfNM_UqFeut/view?usp=sharing)  
+Scan and index iso files allowing search and content download through a web application  
+technologies: C#, ASP NET MVC 5, SQL Server 2012, EntityFramework 6.1.3, .NET Framework 4.5, SQL Server
 
-[mentoring](https://github.com/mamcer/mentoring)  
-A web application that help on the implementation of a company internal employee mentoring program
+[mentoring](https://drive.google.com/file/d/1_Cs2Q571OsGx7E7yPuMQdXfNM_UqFeut/view?usp=sharing)  
+A web application that help on the implementation of a company internal employee mentoring program  
+technologies: C#, ASP NET MVC 5, SQL Server 2012, EntityFramework 6, NET 4.5
 
-[usignalr-raspberry](https://github.com/mamcer/usignalr-raspberry)  
-It allows remotely play music on a Raspberry Pi
+[usignalr-raspberry](https://drive.google.com/file/d/1_Cs2Q571OsGx7E7yPuMQdXfNM_UqFeut/view?usp=sharing)  
+It allows remotely play music on a Raspberry Pi  
+technologies: C#, Angularjs 1.2, MonoDevelop 5.5
 
-[winform-actions](https://github.com/mamcer/winform-actions)  
-An application that demo different Winforms desktop application functionalities
+[winform-actions](https://drive.google.com/file/d/1_Cs2Q571OsGx7E7yPuMQdXfNM_UqFeut/view?usp=sharing)  
+An application that demo different Winforms desktop application functionalities  
+technologies: C#, .NET Framework 4.5
 
 2014
 
-[soulstone-2](https://github.com/mamcer/soulstone-2)  
-Allows to manage different hosts (which provides music), manage playlists and playback of files remotely
+[soulstone-2](https://drive.google.com/file/d/1_Cs2Q571OsGx7E7yPuMQdXfNM_UqFeut/view?usp=sharing)  
+Allows to manage different hosts (which provides music), manage playlists and playback of files remotely  
+technologies: C#, .NET Framework 4.5, Entity Framework 6.1, SignalR 2.0, WebAPI 5.1, SQL Server
 
-[wcf-rest](https://github.com/mamcer/wcf-rest)  
-An example of how to implement a REST api with WCF
+[wcf-rest](https://drive.google.com/file/d/1_Cs2Q571OsGx7E7yPuMQdXfNM_UqFeut/view?usp=sharing)  
+An example of how to implement a REST api with WCF  
+technologies: C#, .NET Framework 4.5
 
 2013
 
-[execution-engine](https://github.com/mamcer/execution-engine)  
-An intent to create a generic task execution library (I use it in other small projects)
+[execution-engine](https://drive.google.com/file/d/1_Cs2Q571OsGx7E7yPuMQdXfNM_UqFeut/view?usp=sharing)  
+An intent to create a generic task execution library (I use it in other small projects)  
+technologies: C#, .NET Framework 4.0
 
-[file-scanner](https://github.com/mamcer/file-scanner)  
-A library that provides file system scan and analysis funtionality (I use in other projects like IsoFinder)
+[file-scanner](https://drive.google.com/file/d/1_Cs2Q571OsGx7E7yPuMQdXfNM_UqFeut/view?usp=sharing)  
+A library that provides file system scan and analysis funtionality (I use in other projects like IsoFinder)  
+technologies: C#, .NET Framework 4.5
 
-[skype-call](https://github.com/mamcer/skype-call)  
-A POC application, you click on a web application link and your home media center video call you using Skype
+[skype-call](https://drive.google.com/file/d/1_Cs2Q571OsGx7E7yPuMQdXfNM_UqFeut/view?usp=sharing)  
+A POC application, you click on a web application link and your home media center video call you using Skype  
+technologies: C#, .NET Framework 4.5, SignalR 1.0.1
 
 2012
 
-[media-center](https://github.com/mamcer/media-center)  
-Responsive web application to remotely control playback of media files in a media center
+[media-center](https://drive.google.com/file/d/1_Cs2Q571OsGx7E7yPuMQdXfNM_UqFeut/view?usp=sharing)  
+Responsive web application to remotely control playback of media files in a media center  
+technologies: C#, .NET Framework 4.5, SignalR 0.5.3, Entity Framework 5
 
 2010
 
-[great-shot](https://github.com/mamcer/great-shot)  
-An application to quickly select your best pictures
+[great-shot](https://drive.google.com/file/d/1_Cs2Q571OsGx7E7yPuMQdXfNM_UqFeut/view?usp=sharing)  
+An application to quickly select your best pictures  
+technologies: C#, .NET Framework 4.0
 
-[isomount](https://github.com/mamcer/isomount)  
-A wrapper of slysoft Virtual Clone Drive to quickly mount iso files
+[isomount](https://drive.google.com/file/d/1_Cs2Q571OsGx7E7yPuMQdXfNM_UqFeut/view?usp=sharing)  
+A wrapper of slysoft Virtual Clone Drive to quickly mount iso files  
+technologies: C#, .NET Framework 4.0
 
-[xgamer](https://github.com/mamcer/xgamer)  
-A GUI to play retro games
+[xgamer](https://drive.google.com/file/d/1_Cs2Q571OsGx7E7yPuMQdXfNM_UqFeut/view?usp=sharing)  
+A GUI to play retro games  
+technologies: C#, .NET Framework 4.0
 
 2009
 
-[lucky-dev](https://github.com/mamcer/lucky-dev)  
-A WPF application that connects to Microsoft TFS and help you select the best code reviewer candidate from the team according to code reviews already assigned
+[lucky-dev](https://drive.google.com/file/d/1_Cs2Q571OsGx7E7yPuMQdXfNM_UqFeut/view?usp=sharing)  
+A WPF application that connects to Microsoft TFS and help you select the best code reviewer candidate from the team according to code reviews already assigned  
+technologies: C#, .NET Framework 3.5
 
 2008
 
-[am](https://github.com/mamcer/am)  
-An application to play mp3 files with full keyboard control. Almost no UI, intended to be a good coding sessions companion with no disruption of the current task 
+[am](https://drive.google.com/file/d/1_Cs2Q571OsGx7E7yPuMQdXfNM_UqFeut/view?usp=sharing)  
+An application to play mp3 files with full keyboard control. Almost no UI, intended to be a good coding sessions companion with no disruption of the current task  
+technologies: C#, .NET Framework 3.5  
 
-[arg-holidays](https://github.com/mamcer/arg-holidays)  
-It connects to a WCF service and allows you to see information of upcoming (or past) Argentinian holidays
+[arg-holidays](https://drive.google.com/file/d/1_Cs2Q571OsGx7E7yPuMQdXfNM_UqFeut/view?usp=sharing)  
+It connects to a WCF service and allows you to see information of upcoming (or past) Argentinian holidays  
+technologies: C#, .NET Framework 3.5
 
-[nacion](https://github.com/mamcer/nacion)  
-A simple web application to see information about a mortgage loan, a simulator to estimate interest earned, etc. Specifically instantiated with my mortgate loan at that moment.
+[nacion](https://drive.google.com/file/d/1_Cs2Q571OsGx7E7yPuMQdXfNM_UqFeut/view?usp=sharing)  
+A simple web application to see information about a mortgage loan, a simulator to estimate interest earned, etc. Specifically instantiated with my mortgate loan at that moment.  
+technologies: C#, .NET Framework 3.5
 
-[soulstone](https://github.com/mamcer/soulstone)  
-A Silverlight application to play music in your browser 
+[soulstone](https://drive.google.com/file/d/1_Cs2Q571OsGx7E7yPuMQdXfNM_UqFeut/view?usp=sharing)  
+A Silverlight application to play music in your browser   
+technologies: C#, Silverlight 2, .NET Framework 3.5
 
 2007
 
-[countdown](https://github.com/mamcer/countdown)  
-A simple countdown application for my wedding
+[countdown](https://drive.google.com/file/d/1_Cs2Q571OsGx7E7yPuMQdXfNM_UqFeut/view?usp=sharing)  
+A simple countdown application for my wedding  
+technologies: C#, .NET Framework 2.0
 
-[mp3-searcher](https://github.com/mamcer/mp3-searcher)  
-Scan an index Windows network shared folders looking for mp3 files. Then it allows to search and play them
+[mp3-searcher](https://drive.google.com/file/d/1_Cs2Q571OsGx7E7yPuMQdXfNM_UqFeut/view?usp=sharing)  
+Scan an index Windows network shared folders looking for mp3 files. Then it allows to search and play them  
+technologies: C#, .NET Framework 2.0
 
