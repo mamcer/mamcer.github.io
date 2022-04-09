@@ -44,13 +44,13 @@ You may think that most of them are trash (and you are most probably right!) to 
 
 They all share the 'Legacy project' repository description in GitHub
 
-> Update (2022--04-09): I removed them from Github to basically reduce de amount of repositories with no changes. You can download all this source code from [here](https://drive.google.com/file/d/1_Cs2Q571OsGx7E7yPuMQdXfNM_UqFeut/view?usp=sharing)
+> Update (2022): I removed them from Github to basically reduce de amount of repositories with no changes. You can download all this source code from [here](https://drive.google.com/file/d/1_Cs2Q571OsGx7E7yPuMQdXfNM_UqFeut/view?usp=sharing)
 
 2018 
 
 [upictures](https://drive.google.com/file/d/1_Cs2Q571OsGx7E7yPuMQdXfNM_UqFeut/view?usp=sharing)  
 A .NET Core app to manage a picture collection. Like most of the applications in this list 
-technology: C#, .NET Core 2.1
+technologies: C#, .NET Core 2.1
 
 2017
 
