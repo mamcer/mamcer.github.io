@@ -12,7 +12,7 @@ Another way to see it is thinking about mana. Assuming we all have a limited qua
 
 I'm definitely a morning person, these cycles are more effective very early in the morning, less time to recover and also my actions seem to be more effective. Reducing their effect and extending time to replendish in the afternoon and night where is more wiser to change to other types of tasks, less intellectual and more physical or with routinary steps to complete
 
-A break could be a coffee break (mate in my case), make simple exercises, a walk in the room, or even a more monotone task like switch to a personal backlog and do phone call to make a doctor appointment or online procedure for example
+A break could be a coffee break ([mate](https://en.wikipedia.org/wiki/Mate_(drink)) in my case), make simple exercises, a walk in the room, or even a more monotone task like switch to a personal backlog and do phone call to make a doctor appointment or online procedure for example
 
 In my case the more effective breaks are the ones that frees the mind to think about the results of the last action stage and prioritize next actions where our mana is again fully replenished 
 
