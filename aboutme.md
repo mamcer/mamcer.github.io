@@ -4,7 +4,7 @@ title: About me
 subtitle: Hi, I'm Mario
 ---
 
-I'm a software developer with more than 20 years of professional experience, most of them in the .NET stack but since more than five years ago I'm working with Golang and several non Microsoft technologies.
+I'm a software developer with more than 20 years of professional experience, most of them in the .NET stack but since more than five years ago I'm working with Golang and several non Microsoft related technologies.
 
 Since I remember I enjoy tinkering things. I found in technology a way to view, design and create. Passionate about technology, learn, teach and quality. Not always in that order.
 
