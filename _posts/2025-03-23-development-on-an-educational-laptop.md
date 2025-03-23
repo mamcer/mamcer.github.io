@@ -64,6 +64,6 @@ Summary: Vim with Vim-Go for Golang development, Docker, MyCli for connecting to
 
 Super extra, you can use cloud services, but I tested Jenkins on the same computer over docker without problems (after tweaking JVM memory).
 
-![jenkins](../img/2025-03-23-development-on-an-educational-l
+![jenkins](../img/2025-03-23-development-on-an-educational-laptop/13-jenkins.png)
 
 Conclusion: Yes, it is possible to learn a programming language and development in general. But with several drawbacks. For example, VSCode as an IDE, along with a browser without too many open tabs, and expect some glitches. Expect an almost impossible experience with a more "professional" IDE like Rider or IntelliJ. The totally best experience includes using Vim, along with MyCli, Docker, Golang and Net Core development. No issues, but I totally agree that it's not for everyone and requires a steeper learning curve.
