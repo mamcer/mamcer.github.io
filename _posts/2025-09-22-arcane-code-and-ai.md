@@ -29,9 +29,6 @@ All of these examples are uploaded to a repository where you can also see my fir
 
 Originally written in Turbo Pascal and Borland C++ on Windows NT 4 in college and then Windows 98 on my first PC... _I was there 3000 years ago..._
 
-![windows-nt-4.0](../img/2025-09-23-arcane-code-and-ai/windows-nt-4.0.png)
-> [betawiki.net](https://betawiki.net/wiki/Windows_NT_4.0)
-
 With AI, I believe the barrier is lower than ever for programming and generating quality solutions in record time. One question I ask myself is whether someone starting their career in IT today is really learning to program and then design systems. These same tools can generate a time and result expectation that is incompatible with truly instilling that knowledge in a person. In other words, the temptation is very strong to write a prompt, have an AI generate all the code, see that the expected output is obtained, and move on to the next problem or issue to be solved without pausing to understand what it did. Maybe the real question here is: is it necessary today to stop and seek to acquire that knowledge in the first place? If the answer is that we will always have an AI available, then perhaps we no longer need to have great knowledge or depth of solutions; we just need to focus on writing quality prompts until an AI solves any problem that may arise. Here we have to see where the quality of the prompt begins to be affected by not knowing the details of what we are trying to build or solve.
 
 For example, historically, my learning approach was to learn by doing, little system designs on paper, POCs, very simple programs that allowed me to test edge cases, for example, or to cement in my mind something I read in a book or post, or imagined was possible but had no confirmation. Different ways of working that today seem deprecated, almost obsolete.
