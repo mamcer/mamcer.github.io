@@ -26,7 +26,7 @@ Another test I ran was using a program called `ROMANO.PAS` originally written by
 
 All of these examples are uploaded to a repository where you can also see my first steps creating and destroying objects. Some are practical work, some are personal learning and practice, seeking to understand more and more of this for my new and fascinating world of programming.
 
-Originally written in Turbo Pascal and Borland C++ on Windows NT 4 in college and then Windows 98 on my first PC... `I was there 3000 years ago...`
+Originally written in Turbo Pascal and Borland C++ on Windows NT 4 in college and then Windows 98 on my first PC... _I was there 3000 years ago..._
 
 [windows-nt-4.0](https://betawiki.net/images/4/4c/Windows-NT-4.0.1381.1-Desktop.png)
 > betawiki.net
