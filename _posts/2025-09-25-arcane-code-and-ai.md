@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Arcane Code and AI
-subtitle: Playing with Gemini CLI, ChatGPT and Claude Sonnet
+subtitle: 
 ---
 
 A while ago, I was sorting through old (very old) files. I found the assignments I did in college and literally my first programs or codes written, first in Pascal and then in C++.
