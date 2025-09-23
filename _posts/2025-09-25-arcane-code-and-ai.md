@@ -14,9 +14,9 @@ Among the programs, I found the final project for Algorithms I (1999), which con
 
 Three solutions that differ in lines of code and approach. All three are valid, although, for example, Gemini doesn't take whitespace into account, so a message consisting of different words separated by spaces doesn't yield the original message when encoded and then decoded. The limitation here lies in the input Morse code, which only takes letters into account and a limited set of symbols. But a difference here that both chatgpt and claude found a workaround on their own to avoid this situation.
 
-[Claude](https://github.com/mamcer/arcane-code/blob/main/algoritmos-1/claude/main.go)
-[ChatGPT](https://github.com/mamcer/arcane-code/blob/main/algoritmos-1/gpt/main.go)
-[Gemini](https://github.com/mamcer/arcane-code/blob/main/algoritmos-1/gemini/main.go)
+[Claude](https://github.com/mamcer/arcane-code/blob/main/algoritmos-1/claude/main.go)  
+[ChatGPT](https://github.com/mamcer/arcane-code/blob/main/algoritmos-1/gpt/main.go)  
+[Gemini](https://github.com/mamcer/arcane-code/blob/main/algoritmos-1/gemini/main.go)  
 
 Seconds to obtain the solution compared to likely hours of analysis and design of the solution, coding, and then surely some debugging to fix errors. I really like the Claude version, closely followed by ChatGPT for the way it handles edge cases.
 
@@ -28,8 +28,8 @@ All of these examples are uploaded to a repository where you can also see my fir
 
 Originally written in Turbo Pascal and Borland C++ on Windows NT 4 in college and then Windows 98 on my first PC... `I was there 3000 years ago...`
 
-[windows-nt-4.0](https://betawiki.net/images/4/4c/Windows-NT-4.0.1381.1-Desktop.png)
-> betawiki.net
+<!-- [windows-nt-4.0](https://betawiki.net/images/4/4c/Windows-NT-4.0.1381.1-Desktop.png)
+> betawiki.net -->
 
 With AI, I believe the barrier is lower than ever for programming and generating quality solutions in record time. One question I ask myself is whether someone starting their career in IT today is really learning to program and then design systems. These same tools can generate a time and result expectation that is incompatible with truly instilling that knowledge in a person. In other words, the temptation is very strong to write a prompt, have an AI generate all the code, see that the expected output is obtained, and move on to the next problem or issue to be solved without pausing to understand what it did. Maybe the real question here is: is it necessary today to stop and seek to acquire that knowledge in the first place? If the answer is that we will always have an AI available, then perhaps we no longer need to have great knowledge or depth of solutions; we just need to focus on writing quality prompts until an AI solves any problem that may arise. Here we have to see where the quality of the prompt begins to be affected by not knowing the details of what we are trying to build or solve.
 
