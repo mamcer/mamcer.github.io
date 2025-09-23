@@ -13,16 +13,16 @@ A few days ago I remembered those codes and now the idea of ​​playing with A
 Among the programs, I found the final project for Algorithms I (1999), which consisted of generating a simple C++ program that encodes and decodes a message in limited Morse code. Using the statement as a starting point, I asked Gemini (CLI), ChatGPT (Web), and Claude Sonnet 3.5 (from VS Code Copilot) to create a Golang implementation. Just to clarify that all three are free versions, currently I'm not paying for any AI services.
 
 Three solutions that differ in lines of code and approach. All three are valid, although, for example, Gemini doesn't take whitespace into account, so a message consisting of different words separated by spaces doesn't yield the original message when encoded and then decoded. The limitation here lies in the input Morse code, which only takes letters into account and a limited set of symbols. But a difference here that both chatgpt and claude found a workaround on their own to avoid this situation.
-
+<!-- 
 [Claude](https://github.com/mamcer/arcane-code/blob/main/algoritmos-1/claude/main.go)  
 [ChatGPT](https://github.com/mamcer/arcane-code/blob/main/algoritmos-1/gpt/main.go)  
-[Gemini](https://github.com/mamcer/arcane-code/blob/main/algoritmos-1/gemini/main.go)  
+[Gemini](https://github.com/mamcer/arcane-code/blob/main/algoritmos-1/gemini/main.go)   -->
 
 Seconds to obtain the solution compared to likely hours of analysis and design of the solution, coding, and then surely some debugging to fix errors. I really like the Claude version, closely followed by ChatGPT for the way it handles edge cases.
 
 Another test I ran was using a program called `ROMANO.PAS` originally written by me in 1998, which, given a Roman numeral, returns its numerical representation.
 
-[roman.go](https://github.com/mamcer/arcane-code/blob/main/programacion-1/roman.go)
+<!-- [roman.go](https://github.com/mamcer/arcane-code/blob/main/programacion-1/roman.go) -->
 
 All of these examples are uploaded to a repository where you can also see my first steps creating and destroying objects. Some are practical work, some are personal learning and practice, seeking to understand more and more of this for my new and fascinating world of programming.
 
