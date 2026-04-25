@@ -1,0 +1,58 @@
+baseURL: "https://mamcer.github.io/"
+languageCode: en-us
+title: Mario Moreno
+theme: PaperMod
+
+paginate: 5
+
+params:
+  env: production
+  description: "AI-First Engineering Manager & Tech Architect"
+  author: Mario Moreno
+  
+  defaultTheme: auto
+  disableThemeToggle: false
+  
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  
+  profileMode:
+    enabled: true
+    title: Mario Moreno
+    subtitle: "AI-First Engineering Manager & Software Architect. Dedicated to evolving high-performance teams and modernizing technical ecosystems."
+    imageUrl: "/img/avatar-icon.jpg"
+    imageWidth: 120
+    imageHeight: 120
+    buttons:
+      - name: Archive
+        url: posts
+      - name: About
+        url: about
+      - name: Portfolio
+        url: https://github.com/mamcer
+
+  socialIcons:
+    - name: linkedin
+      url: "https://linkedin.com/in/mamcer"
+    - name: github
+      url: "https://github.com/mamcer"
+    - name: twitter
+      url: "https://twitter.com/mamcer"
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 20
+
+# Configuración de URLs amigables (sin fechas en el link)
+permalinks:
+  posts: /:title/
