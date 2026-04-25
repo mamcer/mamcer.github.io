@@ -1,4 +1,5 @@
 ---
+date: 2021-10-31
 layout: post
 title: Net Core Ubuntu Dev Server
 subtitle: Example in Azure

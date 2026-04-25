@@ -1,4 +1,5 @@
 ---
+date: 2018-04-15
 layout: post
 title: Continuous Delivery ASP .NET MVC Application
 subtitle: With WebDeploy and Parameter files

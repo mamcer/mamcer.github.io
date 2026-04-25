@@ -1,4 +1,5 @@
 ---
+date: 2017-08-25
 layout: post
 title: Setup a .NET Core, VSCode & Docker Ubuntu Development Environment
 subtitle: .NET Core 2.0, Ubuntu 16.04

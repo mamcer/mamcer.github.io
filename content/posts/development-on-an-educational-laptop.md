@@ -1,4 +1,5 @@
 ---
+date: 2025-03-23
 layout: post
 title: Development on an educational laptop
 subtitle: Debian Mate, Golang, Netcore development

@@ -1,4 +1,5 @@
 ---
+date: 2016-12-11
 layout: post
 title: Bamboo Windows Install
 subtitle:  with SQL Server! step by step guide

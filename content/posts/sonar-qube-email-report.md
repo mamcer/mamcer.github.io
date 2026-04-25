@@ -1,4 +1,5 @@
 ---
+date: 2021-05-01
 layout: post
 title: SonarQube Email Report Application
 subtitle: .NET Core

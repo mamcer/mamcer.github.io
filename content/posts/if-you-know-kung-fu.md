@@ -1,4 +1,5 @@
 ---
+date: 2022-03-26
 layout: post
 title: If you know Kung Fu
 subtitle: Then show it

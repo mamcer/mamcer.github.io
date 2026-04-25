@@ -1,4 +1,5 @@
 ---
+date: 2017-03-04
 layout: post
 title: Bamboo Linux Agent Installation
 subtitle:  Agent installation on CentOS

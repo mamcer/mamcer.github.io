@@ -1,4 +1,5 @@
 ---
+date: 2018-09-09
 layout: post
 title: Removable drive custom icon
 subtitle: On Windows

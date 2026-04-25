@@ -1,4 +1,5 @@
 ---
+date: 2017-03-20
 layout: post
 title: PostgreSQL Centos 7
 ---

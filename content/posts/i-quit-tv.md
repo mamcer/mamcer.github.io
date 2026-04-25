@@ -1,4 +1,5 @@
 ---
+date: 2025-02-23
 layout: post
 title: I quit TV
 subtitle: more than 3 years ago

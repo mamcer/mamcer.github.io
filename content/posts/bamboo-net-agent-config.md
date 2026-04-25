@@ -1,4 +1,5 @@
 ---
+date: 2017-01-21
 layout: post
 title: Bamboo Net Agent
 subtitle: Configuration

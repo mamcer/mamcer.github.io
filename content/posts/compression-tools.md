@@ -1,4 +1,5 @@
 ---
+date: 2017-09-07
 layout: post
 title: Command Line Compression Tools
 subtitle: Windows and Linux

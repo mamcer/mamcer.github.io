@@ -1,4 +1,5 @@
 ---
+date: 2018-05-17
 layout: post
 title: I Finished Diablo 2 LOD
 subtitle: In Hell Difficulty

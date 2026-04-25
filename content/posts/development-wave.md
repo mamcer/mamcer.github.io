@@ -1,4 +1,5 @@
 ---
+date: 2017-04-23
 layout: post
 title: The Development Wave
 subtitle:  Finish your stuff

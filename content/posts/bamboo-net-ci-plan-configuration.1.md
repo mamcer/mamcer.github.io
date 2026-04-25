@@ -1,4 +1,5 @@
 ---
+date: 2017-02-26
 layout: post
 title: Bamboo .NET Continuous Integration
 subtitle:  Plan Configuration

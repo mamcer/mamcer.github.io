@@ -1,4 +1,5 @@
 ---
+date: 2021-10-30
 layout: post
 title: Old Hardware Debian 9
 subtitle: Golang development

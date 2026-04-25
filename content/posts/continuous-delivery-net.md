@@ -1,4 +1,5 @@
 ---
+date: 2017-08-17
 layout: post
 title: .NET Continuous Delivery/Deployment
 subtitle: .NET 4.5 Web Application and SQL Database using Web Deploy

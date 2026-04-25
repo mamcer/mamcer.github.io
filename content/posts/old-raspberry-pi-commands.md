@@ -1,4 +1,5 @@
 ---
+date: 2019-11-30
 layout: post
 title: Old Raspberry Pi commands
 subtitle: Tested on a Raspberry Pi 2 B

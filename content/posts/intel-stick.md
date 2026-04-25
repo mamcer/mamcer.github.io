@@ -1,4 +1,5 @@
 ---
+date: 2022-02-20
 layout: post
 title: Intel Stick
 subtitle: A remote execution experiment

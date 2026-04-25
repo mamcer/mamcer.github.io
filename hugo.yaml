@@ -27,20 +27,18 @@ params:
     imageWidth: 120
     imageHeight: 120
     buttons:
-      - name: Archive
+      - name: Posts
         url: posts
       - name: About
         url: about
-      - name: Portfolio
-        url: https://github.com/mamcer
+      - name: CV
+        url: https://github.com/mamcer/cv/blob/pdf-download/CV_Mario_Moreno_Senior_Engineering_Manager.pdf
 
   socialIcons:
     - name: linkedin
       url: "https://linkedin.com/in/mamcer"
     - name: github
       url: "https://github.com/mamcer"
-    - name: twitter
-      url: "https://twitter.com/mamcer"
 
 menu:
   main:

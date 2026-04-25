@@ -1,4 +1,5 @@
 ---
+date: 2016-12-25
 layout: post
 title: CentOS 7 Minimal
 subtitle: Configuration

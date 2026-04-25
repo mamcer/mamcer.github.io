@@ -1,4 +1,5 @@
 ---
+date: 2021-10-03
 layout: post
 title: Tips
 subtitle: Dicas, general work related tips

@@ -1,4 +1,5 @@
 ---
+date: 2021-04-24
 layout: post
 title: Old School Bootable USB Windows Creation
 subtitle: cmd is your friend

@@ -1,4 +1,5 @@
 ---
+date: 2017-02-27
 layout: post
 title: .NET Code Coverage Process
 subtitle:  With OpenCover

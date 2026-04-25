@@ -1,4 +1,5 @@
 ---
+date: 2022-05-14
 layout: post
 title: Not enough mana
 subtitle: 

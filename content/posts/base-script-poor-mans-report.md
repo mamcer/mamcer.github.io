@@ -1,4 +1,5 @@
 ---
+date: 2021-04-29
 layout: post
 title: Base Windows Script
 subtitle: and Poor Man's Report

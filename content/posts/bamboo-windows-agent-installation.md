@@ -1,4 +1,5 @@
 ---
+date: 2016-12-20
 layout: post
 title: Bamboo Windows Agent Installation
 subtitle: Step by step guide

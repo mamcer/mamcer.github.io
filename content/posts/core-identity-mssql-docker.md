@@ -1,4 +1,5 @@
 ---
+date: 2017-11-04
 layout: post
 title: ASP .NET Core Identity
 subtitle: Using SQL Server on Docker

@@ -1,4 +1,5 @@
 ---
+date: 2016-12-24
 layout: post
 title: JDK linux install
 subtitle: basic jdk install on linux

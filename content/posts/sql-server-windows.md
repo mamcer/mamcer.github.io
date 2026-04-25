@@ -1,4 +1,5 @@
 ---
+date: 2017-03-20
 layout: post
 title: SQL Server Windows Installation
 subtitle:  Thinking on JIRA, Bamboo and Crucible installation

@@ -1,4 +1,5 @@
 ---
+date: 2017-02-04
 layout: post
 title: Bamboo CMD tools
 subtitle: Tools configuration added as Commands

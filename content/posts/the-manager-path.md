@@ -1,4 +1,5 @@
 ---
+date: 2022-03-05
 layout: post
 title: The Manager's Path™
 subtitle: Notes and learnings of my path as IT Manager

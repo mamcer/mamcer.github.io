@@ -1,4 +1,5 @@
 ---
+date: 2017-01-03
 layout: post
 title: Bamboo Ubuntu Install
 subtitle: Installation steps

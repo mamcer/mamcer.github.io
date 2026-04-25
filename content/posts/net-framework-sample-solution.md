@@ -1,4 +1,5 @@
 ---
+date: 2018-08-27
 layout: post
 title: .NET Framework sample solution
 subtitle: With tools

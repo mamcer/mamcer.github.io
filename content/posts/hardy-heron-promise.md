@@ -1,4 +1,5 @@
 ---
+date: 2021-02-18
 layout: post
 title: Hardy Heron promise
 subtitle: Old hardware and nostalgia

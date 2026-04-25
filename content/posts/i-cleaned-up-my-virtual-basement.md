@@ -1,4 +1,5 @@
 ---
+date: 2018-09-02
 layout: post
 title: I cleaned up my virtual basement
 subtitle: Of archived side projects

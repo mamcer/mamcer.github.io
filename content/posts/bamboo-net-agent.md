@@ -1,4 +1,5 @@
 ---
+date: 2016-12-24
 layout: post
 title: Bamboo .NET Agent Setup
 subtitle: whithout Visual Studio
