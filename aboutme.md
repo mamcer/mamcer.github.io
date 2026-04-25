@@ -1,11 +1,15 @@
 ---
 layout: page
 title: About me
-subtitle: Hi, I'm Mario
+subtitle: Senior Engineering Manager & Software Architect
 ---
 
-I'm a technical leader with over 20 years of experience building software and people. I have experience with several technologies like C#, Golang, MySQL, architecting solutions that range from on-premises monoliths to cloud-native microservices. I'm proficient across Linux, Windows, and Mac platforms and I am passionate about using modern DevOps practices to ensure efficient and reliable software delivery.
+I am a technical leader with over 20 years of experience architecting high-availability systems and leading high-performance engineering teams. My career has evolved from building on-premises monoliths to orchestrating cloud-native ecosystems, always with a focus on scalability and operational excellence.
 
-Since I remember I enjoy tinkering things. I found in technology a way to view, design and create. Passionate about learning, technology, teaching and quality.
+Currently, I am focused on **AI-First Engineering**, pioneering the integration of AI-augmented workflows (SDLC) to accelerate delivery velocity and elevate code quality. I specialize in strategic technical transitions—such as modernizing legacy .NET environments and integrating high-performance Golang services—while managing multicultural squads in hyper-growth sectors like Fintech and Energy.
 
-I born in [Balcarce](https://en.wikipedia.org/wiki/Balcarce,_Buenos_Aires) studied System Engineering in [Tandil](https://en.wikipedia.org/wiki/Tandil) and then moved to Buenos Aires, Argentina. This blog, its content and opinions are my own.
+Beyond architecture, I am passionate about mentoring the next generation of engineers and fostering a culture of continuous learning and quality. 
+
+Born in [Balcarce](https://en.wikipedia.org/wiki/Balcarce,_Buenos_Aires), educated in [Tandil](https://en.wikipedia.org/wiki/Tandil), and currently based in Buenos Aires, Argentina. 
+
+*This blog, its content, and opinions are strictly my own.*
