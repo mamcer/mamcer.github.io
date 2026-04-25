@@ -32,7 +32,7 @@ params:
       - name: About
         url: about
       - name: CV
-        url: https://github.com/mamcer/cv/blob/pdf-download/CV_Mario_Moreno_Senior_Engineering_Manager.pdf
+        url: https://github.com/mamcer/cv/blob/main/CV_Mario_Moreno_Senior_Engineering_Manager.pdf
 
   socialIcons:
     - name: linkedin
@@ -51,6 +51,5 @@ menu:
       url: /about/
       weight: 20
 
-# Configuración de URLs amigables (sin fechas en el link)
 permalinks:
   posts: /:title/
