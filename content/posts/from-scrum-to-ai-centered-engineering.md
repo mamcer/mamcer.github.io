@@ -54,3 +54,5 @@ Real MTTR (mean time to restore after an incident) requires logging the moment o
 The throughput number is real, but there is a version of this story that goes badly: AI generates speed without judgment, review rates drop because there is too much to review, and change failure rate climbs. We watched for this.
 
 The team of 7 doubled its output. Not by working more hours. By managing the constraint that actually exists now.
+
+This journey is still far from over.
