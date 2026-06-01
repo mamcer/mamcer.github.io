@@ -5,8 +5,6 @@ title: From Scrum to AI-Centered Engineering
 subtitle: When Coding Stopped Being the Bottleneck
 ---
 
-# From Scrum to AI-Centered Engineering: When Coding Stopped Being the Bottleneck
-
 The presentation that started all of this opened with Egyptian hieroglyphics next to the word "Scrum." Not as a joke. As a serious observation: Scrum was invented to manage a specific bottleneck, and that bottleneck is gone.
 
 For a while we ignored this. The team knew something was off but we kept running sprints, estimating in points, tracking velocity. Then the data started getting hard to ignore. Features that had always been "5 points" were shipping in a few hours. Our velocity numbers were climbing but they had stopped meaning anything. A sprint with a lot of Claude-assisted bugfixes could score higher than a sprint where we shipped something genuinely hard and both would read the same on the chart.
