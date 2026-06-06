@@ -1,9 +1,10 @@
-# project
-_site
-.sass-cache
-.vagrant
+# Hugo build output
+public/
+resources/_gen/
+.hugo_build.lock
 
-# general
+# OS-specific files
 .DS_Store
 Thumbs.db
 ehthumbs.db
+desktop.ini
