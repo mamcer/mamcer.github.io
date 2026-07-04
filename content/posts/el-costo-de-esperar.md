@@ -13,9 +13,9 @@ Esa sensación me acompañó hasta bien entrada la adolescencia, e incluso algun
 
 Causas? La edad. El contexto. La madurez? Tal vez poco sentido tiene entenderlo hoy. Lo cierto es que, poco a poco, fueron erosionando aquella sensación de inmensidad.
 
-En algún momento de la adultez el horizonte comienza a verse menos infinito. Aquí sin buscar sonar dramático, generar melancolía o nostalgia, creo que puede ser un gran motor para tomar desiciones.
+En algún momento de la adultez el horizonte comienza a verse menos infinito. Aquí sin buscar sonar dramático, generar melancolía o nostalgia, creo que puede ser un gran motor para tomar decisiones.
 
-Esas desiciones que uno posterga, por que todavía hay tiempo, por que aparece el miedo tal vez, por que no hay garantías de éxito, porque el riesgo se evalúa como demasiado elevado. Aún así, algo interno insiste: *"hay que hacerlo"*.
+Esas decisiones que uno posterga, por que todavía hay tiempo, por que aparece el miedo tal vez, por que no hay garantías de éxito, porque el riesgo se evalúa como demasiado elevado. Aún así, algo interno insiste: *"hay que hacerlo"*.
 
 A veces sale bien y la satisfacción es total. Otras sale mal.. toca afrontar consecuencias, aprender y seguir. Pero incluso cuando el resultado no es el esperado, si las consecuencias no son devastadoras, suele quedar esa pequeña satisfacción de no cargar con el eterno *"qué hubiera pasado si...?"*.
 
@@ -23,7 +23,7 @@ Con el tiempo se hace más evidente también una verdad incómoda: estar ocupado
 
 Mantenerse siempre ocupado puede ser una forma elegante de evitar decidir.
 
-El tiempo no se recupera. Cada día nos regala 24hs. Tal vez la moneda más valiosa que existe y al mismo tiempo la más naturalizada. Hay slots fijos: descansar, comer, trabajar, cumplir responsabilidades, etc. Pero en general creo la gran mayoría tenemos esa suerte de slots disponibles bajo nuestra desición. Tal vez no siempre son los mejores, porque nos encuentran cansados física o mentalmente. Pero están.
+El tiempo no se recupera. Cada día nos regala 24hs. Tal vez la moneda más valiosa que existe y al mismo tiempo la más naturalizada. Hay slots fijos: descansar, comer, trabajar, cumplir responsabilidades, etc. Pero en general creo la gran mayoría tenemos esa suerte de slots disponibles bajo nuestra decisión. Tal vez no siempre son los mejores, porque nos encuentran cansados física o mentalmente. Pero están.
 
 Otra realidad también empieza a hacerse evidente: muchas veces es más importante decidir que NO hacer que decidir que SI hacer.
 
