@@ -23,9 +23,9 @@ Con el tiempo se hace más evidente también una verdad incómoda: estar ocupado
 
 Mantenerse siempre ocupado puede ser una forma elegante de evitar decidir.
 
-El tiempo no se recupera. Cada día nos regala 24hs. Tal vez la moneda más valiosa que existe y al mismo tiempo la más naturalizada. Hay slots fijos: descansar, comer, trabajar, cumplir responsabilidades, etc. Pero en general creo la gran mayoría tenemos esa suerte de slots disponibles bajo nuestra decisión. Tal vez no siempre son los mejores, porque nos encuentran cansados física o mentalmente. Pero están.
+El tiempo no se recupera. Cada día nos regala 24 horas. Tal vez la moneda más valiosa que existe y al mismo tiempo la más naturalizada. Hay slots fijos: descansar, comer, trabajar, cumplir responsabilidades, etc. Pero en general creo la gran mayoría tenemos esa suerte de slots disponibles bajo nuestra decisión. Tal vez no siempre son los mejores, porque nos encuentran cansados física o mentalmente. Pero están.
 
-Otra realidad también empieza a hacerse evidente: muchas veces es más importante decidir que NO hacer que decidir que SI hacer.
+Otra realidad también empieza a hacerse evidente: muchas veces es más importante decidir qué NO hacer que decidir qué SÍ hacer.
 
 Ahí aparece el verdadero valor de decidir deliberadamente:
 
@@ -41,6 +41,6 @@ Evitar esa sensación de que *"el día me pasó por arriba"*. De haber ido dejá
 
 Al inicio de cada mañana desde hace ya bastante tiempo y casi sin proponérmelo dedico unos minutos a hacer una evaluación personal y laboral. Repaso mentalmente qué es realmente importante ese día, en general lo vuelco a un txt luego para liberar la mente. Qué tiene que suceder hoy. Qué necesita avanzar para poder cerrarse mañana, la semana próxima o dentro de un mes.
 
-Guía y objetivo que luego puede y seguramente va a verse desafiado por urgencias que surjen reclamando sus espacios de tiempo.
+Guía y objetivo que luego puede y seguramente va a verse desafiado por urgencias que surgen reclamando sus espacios de tiempo.
 
 Aún así al final del día la pregunta más importante tal vez no sea cuántas tareas terminamos, sino cuántas de esas 24 horas realmente nos pertenecieron.
