@@ -29,17 +29,17 @@ Otra realidad también empieza a hacerse evidente: muchas veces es más importan
 
 Ahí aparece el verdadero valor de decidir deliberadamente:
 
-Menos piloto automático.
-Más decisiones conscientes.
-Más tiempo aprendiendo.
-Más tiempo enseñando.
-Más conversaciones profundas.
-Más tiempo presente en familia.
-Más momentos simplemente estando.
+Menos piloto automático.  
+Más decisiones conscientes.  
+Más tiempo aprendiendo.  
+Más tiempo enseñando.  
+Más conversaciones profundas.  
+Más tiempo presente en familia.  
+Más momentos simplemente estando.  
 
 Evitar esa sensación de que *"el día me pasó por arriba"*. De haber ido dejándose llevar, cascadeando hacia abajo. No siempre se logra. Nuevo día, nueva oportunidad.
 
-Cada mañana desde hace ya bastante tiempo y casi sin proponérmelo dedico unos minutos a hacer una evaluación personal y laboral. Repaso mentalmente qué es realmente importante ese día, en general lo vuelco a un txt luego para liberar la mente. Qué tiene que suceder hoy. Qué necesita avanzar para poder cerrarse mañana, la semana próxima o dentro de un mes.
+Al inicio de cada mañana desde hace ya bastante tiempo y casi sin proponérmelo dedico unos minutos a hacer una evaluación personal y laboral. Repaso mentalmente qué es realmente importante ese día, en general lo vuelco a un txt luego para liberar la mente. Qué tiene que suceder hoy. Qué necesita avanzar para poder cerrarse mañana, la semana próxima o dentro de un mes.
 
 Guía y objetivo que luego puede y seguramente va a verse desafiado por urgencias que surjen reclamando sus espacios de tiempo.
 
