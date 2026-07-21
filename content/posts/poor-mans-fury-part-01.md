@@ -13,7 +13,7 @@ En ese contexto también oculta, se trabaja a otro nivel de abstracción. En cas
 
 Pero justamente por eso, entender qué está sucediendo under-the-hood creo que es más valioso que nunca. Un LLM te puede sugerir un diagnóstico, tener un nivel de entendimiento de la situación te permite confirmarlo o darte cuenta cuando está equivocado y ahorrarte preciados minutos persiguiendo falsas hipótesis.
 
-En 2017 compré un Intel NUC: i7, 16GB de RAM para aprender armando un home server de datos y deployar toy applications: Jenkins, SonarQube, Docker, MySQL. Esto fue aprendizaje propio, entender qué está sucediendo, cómo se conectan los engranajes. Aquí una guía dividida en diferentes partes acerca del viaje para crear otro tipo de monstruo, un Poor Man's Fury con herramientas open source y presupuesto cero.
+En 2017 compré un Intel NUC: i7, 16GB de RAM para aprender armando un home server de datos y deployar toy applications propias: Jenkins, SonarQube, Docker, MySQL. Esto fue aprendizaje propio, entender qué está sucediendo, cómo se conectan los engranajes. Aquí una guía dividida en diferentes partes acerca del viaje para crear otro tipo de monstruo, un Poor Man's Fury con herramientas open source y presupuesto cero.
 
 ![nuc](../img/2026-07-21-poor-mans-fury-part-01/nuc.jpg)
 
