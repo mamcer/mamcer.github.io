@@ -5,8 +5,6 @@ title: "Poor Man's Fury - Parte 1"
 subtitle: Cluster, ingress y el primer pipeline
 ---
 
-# Poor Man's Fury: Parte 1
-
 En mis casi seis años trabajando en Mercado Libre aprendí y crecí como profesional de una forma que no lo había hecho antes. Como todo aprendizaje eso ya forma parte de uno y te acompaña adonde vayas. Pero hay cosas que uno no se lleva. De esas, la que más había naturalizado y que la realidad de trabajar en una startup se encargó de demostrarme, fue Fury.
 
 Fury es la plataforma interna de Mercado Libre para crear y operar microservicios: CI/CD, secrets, observabilidad y catálogo. Todo eso ya resuelto por la plataforma. Vos creás el servicio, la plataforma se encarga del resto.
