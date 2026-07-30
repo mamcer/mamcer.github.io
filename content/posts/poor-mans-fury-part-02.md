@@ -219,7 +219,7 @@ helm install promtail grafana/promtail --namespace fury-monitoring \
 
 > Loki: el "Prometheus de los logs" (?). En vez de indexar el contenido completo de cada línea (como por ejemplo Elasticsearch), solo indexa metadata (labels) y comprime el resto, mucho más liviano para un homelab. Promtail es el agente que corre en cada nodo, junta los logs de todos los pods y se los manda.
 
-**Issue 02**: el chart de Loki cambió de esquema entre versiones y no avisa con gracia. Las versiones recientes vienen en modo SimpleScalable por default, con componentes read, write y backend separados. Si solo configurás singleBinary sin declarar deploymentMode: SingleBinary explícito, el chart detecta ambos modos activos a la vez y directamente se niega a instalar: "You have more than zero replicas configured for both the single binary and simple scalable targets."
+**Issue 02**: el chart de Loki cambió de esquema entre versiones y no avisa de la mejor forma. Las versiones recientes vienen en modo SimpleScalable por default, con componentes read, write y backend separados. Si solo configurás singleBinary sin declarar deploymentMode: SingleBinary explícito, el chart detecta ambos modos activos a la vez y directamente se niega a instalar: "You have more than zero replicas configured for both the single binary and simple scalable targets."
 
 **Issue 03**: Loki, por default, exige multi-tenancy. Sin el header X-Scope-OrgID en cada request, todo se rechaza con 404 no org id. Promtail necesita el tenant_id en su config (como en el comando de arriba), y cualquier datasource de Grafana que apunte a Loki necesita el mismo header agregado a mano en "HTTP Headers" al momento de configurarlo.
 
@@ -256,6 +256,6 @@ Luego se pueden agregar cuatro dashboards prearmados por ID (Import > 'número')
 
 ## Dónde quedamos
 
-Una app corriendo en `fury-dev` con sus secrets inyectados por Vault, sus métricas y logs ya aparecen en Grafana sin haber tenido que instrumentarla a mano para eso.
+Una app corriendo en `fury-dev` con sus secrets inyectados por Vault, sus métricas y logs ya aparecen en Grafana sin haber tenido que instrumentar nada a mano para eso.
 
 Lo que queda pendiente es un catalogo, una UI, algo que se parezca a un producto. Ahi entra Backstage como front, capa UI sobre nuestro Fury.
