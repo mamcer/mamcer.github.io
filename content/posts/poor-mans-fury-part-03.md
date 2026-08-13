@@ -124,6 +124,8 @@ spec:
 
 Con el target en `health: "up"`, el dashboard quedó armado como código — un `ConfigMap` con el JSON del dashboard adentro, con el label `grafana_dashboard: "1"` que el sidecar de Grafana (`grafana-sc-dashboard`, viene con `kube-prometheus-stack`) descubre solo, sin reiniciar ningún pod. Mismo espíritu que el resto de esta serie: nada de clickear en una UI para dejar algo que después no se puede versionar.
 
+![dashboard RED de gostalgia-api con tráfico real, incluyendo el pico de error rate de /v1/debug/fail](../img/2026-08-13-poor-mans-fury-part-03/gostalgia-red-dashboard.png)
+
 ## Correlación trace - logs
 
 Con traces y métricas ya andando, faltaba la pieza que las conecta: poder pasar de un trace roto en Tempo a las líneas de log exactas de esa request, sin tocar `kubectl logs` a mano.
