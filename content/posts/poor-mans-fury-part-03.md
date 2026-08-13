@@ -7,9 +7,9 @@ subtitle: Traces, métricas y error budgets
 
 Escenas del episodio anterior: en la Parte 2 quedó una app corriendo en `fury-dev` con sus secrets inyectados por Vault, métricas y logs apareciendo solos en Grafana. El cierre apuntaba a Backstage como próximo paso: un catálogo, una UI, algo que se pareciera a un producto.
 
-En el medio.. pasaron cosas y repensando el plan, no tiene sentido construir un catálogo lindo sobre un sistema que no podés ver por dentro. Y "ver por dentro" es exactamente el tema con el que abrió esta serie - la diferencia entre que un LLM te sugiera un diagnóstico y poder confirmarlo vos porque entendés qué está pasando. Prometheus y Loki (Parte 2) te dicen *qué* está roto. Faltaba el tercer pilar: *por qué*, siguiendo un request específico a través de todo el sistema.
+En el medio pasaron cosas y, repensando el plan, no tiene sentido construir un catálogo lindo sobre un sistema que no podés ver por dentro. Y "ver por dentro" es exactamente el tema con el que abrió esta serie: la diferencia entre que un LLM te sugiera un diagnóstico y poder confirmarlo vos porque entendés qué está pasando. Prometheus y Loki (Parte 2) te dicen *qué* está roto. Faltaba el tercer pilar: *por qué*, siguiendo un request específico a través de todo el sistema.
 
-Asi surgio la fase *4.5*: Traces con Tempo, la propia app instrumentada con OpenTelemetry, métricas custom con un dashboard RED, correlación trace - logs, y SLOs con error budget de verdad.
+Así surgió la fase *4.5*: Traces con Tempo, la propia app instrumentada con OpenTelemetry, métricas custom con un dashboard RED, correlación trace <> logs, y SLOs con error budget de verdad.
 
 ## Fase 4.5 - El tercer pilar: traces con Tempo
 
@@ -120,7 +120,7 @@ spec:
       path: /v1/metrics
 ```
 
-> **Issue 02**: aplicado, con el `serviceMonitorSelector` del Prometheus Operator confirmado correcto, el target seguía sin aparecer en `/api/v1/targets`. La confusión: `ServiceMonitor.spec.selector` filtra por los labels del objeto `Service` — no por el `spec.selector` que el Service usa para elegir *pods*. Son dos cosas con el mismo nombre (`selector`) resolviendo problemas distintos. El `Service` de `gostalgia-api` no tenía ningún label propio en el cluster, aunque el YAML fuente sí lo tenía — nunca se había vuelto a aplicar después de agregarlo. `kubectl label svc gostalgia-api app=gostalgia-api` de urgencia, y reaplicar el manifiesto para que quedara sincronizado.
+> **Issue 02**: aplicado, con el `serviceMonitorSelector` del Prometheus Operator confirmado correcto, el target seguía sin aparecer en `/api/v1/targets`. La confusión: `ServiceMonitor.spec.selector` filtra por los labels del objeto `Service` — no por el `spec.selector` que el Service usa para elegir *pods*. Son dos cosas con el mismo nombre (`selector`) resolviendo problemas distintos. El `Service` de `gostalgia-api` no tenía ningún label propio en el cluster, aunque el YAML fuente sí lo tenía — nunca se había vuelto a aplicar después de agregarlo. Fix de urgencia: `kubectl label svc gostalgia-api app=gostalgia-api`, y después reaplicar el manifiesto para que quedara sincronizado.
 
 Con el target en `health: "up"`, el dashboard quedó armado como código — un `ConfigMap` con el JSON del dashboard adentro, con el label `grafana_dashboard: "1"` que el sidecar de Grafana (`grafana-sc-dashboard`, viene con `kube-prometheus-stack`) descubre solo, sin reiniciar ningún pod. Mismo espíritu que el resto de esta serie: nada de clickear en una UI para dejar algo que después no se puede versionar.
 
@@ -145,7 +145,9 @@ Un wrapper de `slog.Handler` que lee el span activo del contexto y le suma `trac
 
 > **Issue 03**: la config de "Trace to logs" del datasource de Tempo (que conecta con Loki) estaba vacía en Grafana — nunca había quedado guardada la primera vez. Sin eso, el botón "Logs for this span" no aparece en el detalle de un trace. Reconfigurar (`Data source: Loki`, "Filter by Trace ID" activado) lo resolvió — con el `trace_id` como texto plano en cada log JSON, Loki lo puede buscar directo, sin mapear tags de span a labels.
 
-Con eso: `curl /v1/debug/fail` > el `trace_id` aparece en el log (`kubectl logs | grep "request failed"`) > pegado en Grafana Explore (Tempo) abre el trace > el botón de logs salta directo a la línea correlacionada en Loki. De un error a la causa raíz, todo desde una sola pantalla.
+Con eso: `curl /v1/debug/fail` → el `trace_id` aparece en el log (`kubectl logs | grep "request failed"`) → pegado en Grafana Explore (Tempo) abre el trace → el botón de logs salta directo a la línea correlacionada en Loki. De un error a la causa raíz, todo desde una sola pantalla.
+
+![trace de gostalgia-api](../img/2026-08-13-poor-mans-fury-part-03/tempo-logs-for-span.png)
 
 ## SLOs con error budget de verdad
 
@@ -169,23 +171,6 @@ Buckets: []float64{0.01, 0.025, 0.05, 0.1, 0.2, 0.3, 0.5, 1, 2.5, 5, 10}
 Cada alerta exige que **ambas** ventanas superen el umbral a la vez — un pico de dos minutos que se resuelve solo no dispara un page. Todo esto vive en un `PrometheusRule`, recording rules más las dos alertas, mismo patrón declarativo que el `ServiceMonitor`.
 
 Con tráfico bajo/sintético como el de este homelab, las ventanas cortas van a tener ratios ruidosos — pocas muestras por minuto. El valor acá es la técnica, no la significancia estadística de una alerta en particular.
-
-## Bonus no planeado: el CI que tardaba una hora
-
-Nada de esto estaba en el plan de esta parte, pero cada push disparaba un pipeline de más de una hora en un i7 con 16GB y SSD — no hay ninguna razón de hardware para eso.
-
-> **Issue 04**: `docker/setup-buildx-action` crea un builder Buildx nuevo y efímero en cada corrida. El `Dockerfile.api` ya estaba bien escrito (`COPY go.mod go.sum` + `go mod download` separado de `COPY . .`, el patrón correcto para cachear capas), pero sin `cache-from`/`cache-to` explícito ese cache arranca frío siempre — el Dockerfile bien escrito no importa si no hay ningún cache real para reusar entre corridas.
-
-```yaml
-cache-from: type=local,src=/home/mario/actions-runner/_work/_buildx-cache
-cache-to: type=local,dest=/home/mario/actions-runner/_work/_buildx-cache,mode=max
-```
-
-Un directorio fijo en el propio disco del runner, sin depender del backend de cache remoto de GitHub (que además estaba fallando la autenticación en este runner self-hosted — confirmado con `du -sh` que el cache nativo de Go ya persistía solo en disco entre corridas, así que ese cache remoto roto no era el cuello de botella real, solo ruido).
-
-Resultado, primera corrida en frío (el directorio de cache recién se estaba llenando): `lint` 42s, `test` 16s, `build-and-push` 12m24s. Segunda corrida, con el cache ya tibio: **`build-and-push` bajó a 6m56s**. De ~1h10m a ~8 minutos totales.
-
-De yapa, el commit del SLO disparó la primera falla real de `test` en todo el pipeline — una data race genuina (no falso positivo) en un mock de test: `MockFileSystem` usa mapas de Go sin ningún lock, mientras el código real de `ScanService.CopyFiles` lo llama desde varios workers en paralelo, por diseño. El flag `-race` que se configuró en la Parte 1 (`CGO_ENABLED: 1` solo en el step de test) venía sin atrapar esto por pura suerte de scheduling, hasta esta corrida. Un `sync.Mutex` en el mock, cambio acotado a código de test, resolvió el problema real, no una condición de carrera del código de producción.
 
 ## Dónde quedamos
 
