@@ -5,7 +5,7 @@ title: "Poor Man's Fury - Parte 4"
 subtitle: Catálogo y scaffolding
 ---
 
-Escenas del episodio anterior: la Parte 3 cerró con `gostalgia-api` viéndose a sí misma de punta a punta — traces, métricas, logs correlacionados, un SLO real con burn rate — y un gancho hacia sistemas distribuidos: inyectar fallas reales, no un endpoint de demo ademas de ver si la instrumentación alcanzaba para diagnosticarlas sin adivinar, fase 4.5.
+Escenas del episodio anterior: la Parte 3 cerró con `gostalgia-api` viéndose a sí misma de punta a punta — traces, métricas, logs correlacionados, un SLO real con burn rate — y un gancho hacia sistemas distribuidos: inyectar fallas reales, no un endpoint de demo además de ver si la instrumentación alcanzaba para diagnosticarlas sin adivinar, fase 4.5.
 
 Esta parte retoma el orden original: Backstage, catálogo y scaffolding, fases 5 y 6.
 
@@ -13,14 +13,14 @@ Esta parte retoma el orden original: Backstage, catálogo y scaffolding, fases 5
 
 > **Backstage**: framework open source de developer portal, creado por Spotify y donado a la CNCF en 2020 (proyecto graduado desde 2022). Es lo más parecido que existe, en software libre, a lo que sería una Fury UI genérica: catálogo de servicios con ownership declarado, scaffolding de apps nuevas, documentación centralizada, y un ecosistema de plugins para enchufar todo lo demás en una sola pantalla. Dato aparte: Mercado Libre no usa Backstage, Fury es anterior y 100% propio.
 
-`rathma` no tenía Node instalado, hasta aqui no lo habiamos precisado. Backstage necesita una LTS activa:
+`rathma` no tenía Node instalado, hasta aquí no lo habíamos precisado. Backstage necesita una LTS activa:
 
 ```bash
 curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
 sudo apt install -y nodejs
 ```
 
-> **Issue 01**: la guía original usaba `npx @backstage/create-app@latest --name fury-portal`. La versión actual del CLI (`0.9.0`) sacó ese flag por completo — ahora es `--path` para la ubicación, y el nombre de la app se pregunta interactivo aparte. Mismo patrón un poco más adelante: la guía decía `yarn dev`, el script real en el `package.json` generado es `yarn start` (`yarn dev` tira directo `Usage Error: Couldn't find a script named "dev"`).
+> **Issue 01**: la guía original usaba `npx @backstage/create-app@latest --name fury-portal`. La versión actual del CLI (`0.9.0`) sacó ese flag por completo — ahora es `--path` para la ubicación, y el nombre de la app se pregunta de forma interactiva aparte. Mismo patrón un poco más adelante: la guía decía `yarn dev`, el script real en el `package.json` generado es `yarn start` (`yarn dev` tira directo `Usage Error: Couldn't find a script named "dev"`).
 
 ```bash
 cd ~/dev
@@ -74,7 +74,7 @@ Un `ClusterRole: view` — solo lectura, sin capacidad de crear ni borrar nada �
 
 Con todo levantado (`yarn start`, que corre frontend y backend juntos en un solo proceso), entrar a la UI desde otra máquina en la LAN tiró un error que no tenía nada que ver con Backstage en sí:
 
-> **Issue 02**: `TypeError: globalThis.crypto.randomUUID is not a function`, al loguearse como guest. Causa: `crypto.randomUUID` (Web Crypto API) solo existe en un *secure context* — HTTPS, o el caso especial de `localhost`. Acceder por `http://192.168.100.100:3000` no cuenta, aunque cargue la página sin drama aparente. *Fix sin certificados* de por medio: túnel SSH desde la notebook, para que el navegador vea el origen como `localhost` de verdad. Siguiente problema: el primer intento de túnel (`ssh -L 3000:localhost:3000 ...`) daba `connect failed: Connection refused` en loop, porque `localhost` del lado del servidor resolvía primero a `::1` (IPv6) y Backstage escuchaba en IPv4 (este estuvo mas duro de diagnosticar..). Forzar `127.0.0.1` explícito en el forwarding lo resolvió.
+> **Issue 02**: `TypeError: globalThis.crypto.randomUUID is not a function`, al loguearse como guest. Causa: `crypto.randomUUID` (Web Crypto API) solo existe en un *secure context* — HTTPS, o el caso especial de `localhost`. Acceder por `http://192.168.100.100:3000` no cuenta, aunque cargue la página sin drama aparente. *Fix sin certificados* de por medio: túnel SSH desde la notebook, para que el navegador vea el origen como `localhost` de verdad. Siguiente problema: el primer intento de túnel (`ssh -L 3000:localhost:3000 ...`) daba `connect failed: Connection refused` en loop, porque `localhost` del lado del servidor resolvía primero a `::1` (IPv6) y Backstage escuchaba en IPv4 (este estuvo más duro de diagnosticar). Forzar `127.0.0.1` explícito en el forwarding lo resolvió.
 
 Con el catálogo arriba y `gostalgia` registrado (un `catalog-info.yaml` de 15 líneas, commiteado directo a `main`), la pestaña de Kubernetes del componente mostraba `No Kubernetes resources` — sin ningún error, la auth ya andaba bien.
 
@@ -129,7 +129,6 @@ steps:
     action: catalog:register
 ```
 
-
 La primera corrida real, con un nombre de prueba (`fury-template-test`), pasó los 6 pasos sin un solo error: repo creado, PR abierto contra el repo de infra, app registrada en el catálogo. Pero el CI del repo nuevo falló:
 
 > **Issue 04**: `missing go.sum entry for module providing package github.com/gin-gonic/gin`. El `go.mod` generado solo listaba las dos dependencias directas, sin `go.sum` ni el bloque `// indirect` — con el grafo de módulos podado que usa Go desde la 1.17, comandos en modo `-mod=readonly` (el default) no pueden resolver dependencias transitivas sin eso. El primer intento de fix, agregar `go mod download` al pipeline, no alcanzó: baja los paquetes pero no completa el `go.sum` para todo el árbol transitivo, hace falta `go mod tidy`. En vez de correr eso en cada CI de cada app generada — funcionaría, pero nadie commitea un `go.mod` sin su `go.sum` en un repo Go de verdad — se generó el `go.sum` real una única vez, contra las versiones fijas de `gin`/`client_golang` que usa el template, y quedó embebido como archivo estático: no varía entre apps generadas porque las versiones no varían.
@@ -140,6 +139,6 @@ Con el fix aplicado y confirmado en el repo de prueba, el pipeline completo corr
 
 ## Dónde quedamos
 
-Backstage quedó completo en sus dos mitades: un catálogo que descubre servicios solo y muestra su estado real en Kubernetes, y un scaffolding que genera un servicio nuevo con CI/CD ya verde desde el primer push. Incluido fix del `go.sum` roto, justamente para que sea una experiencia golden path, el codigo generado debe funcionar de una.
+Backstage quedó completo en sus dos mitades: un catálogo que descubre servicios solo y muestra su estado real en Kubernetes, y un scaffolding que genera un servicio nuevo con CI/CD ya verde desde el primer push. Incluido fix del `go.sum` roto, justamente para que sea una experiencia golden path, el código generado debe funcionar de una.
 
 Lo que no hace todavía: el PR del manifest de deploy no se aplica solo al cluster, y el policy de Vault de una app nueva sigue siendo un paso manual. Conectar eso es literalmente la fase que sigue: el flujo completo de punta a punta.
