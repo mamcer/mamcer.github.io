@@ -11,9 +11,9 @@ Esta parte retoma el orden original: Backstage, catálogo y scaffolding, fases 5
 
 ## Fase 5 - Backstage: el catálogo
 
-> **Backstage**: framework open source de developer portal, creado por Spotify y donado a la CNCF en 2020 (proyecto graduado desde 2022). Es lo más parecido que existe, en software libre, a lo que sería una Fury UI genérica: catálogo de servicios con ownership declarado, scaffolding de apps nuevas, documentación centralizada, y un ecosistema de plugins para enchufar todo lo demás en una sola pantalla. Dato aparte: Mercado Libre no usa Backstage, Fury es anterior y 100% propio — el paralelo de esta serie es genuino, no al revés.
+> **Backstage**: framework open source de developer portal, creado por Spotify y donado a la CNCF en 2020 (proyecto graduado desde 2022). Es lo más parecido que existe, en software libre, a lo que sería una Fury UI genérica: catálogo de servicios con ownership declarado, scaffolding de apps nuevas, documentación centralizada, y un ecosistema de plugins para enchufar todo lo demás en una sola pantalla. Dato aparte: Mercado Libre no usa Backstage, Fury es anterior y 100% propio.
 
-`rathma` no tenía Node instalado. Backstage necesita una LTS activa:
+`rathma` no tenía Node instalado, hasta aqui no lo habiamos precisado. Backstage necesita una LTS activa:
 
 ```bash
 curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
@@ -28,7 +28,7 @@ npx @backstage/create-app@latest --path fury-portal
 # ? Enter a name for the app [required] fury-portal
 ```
 
-El scaffolding en sí corrió bien, pero el install final falló con `yarn: not found` — Backstage usa Yarn vía Corepack, que viene con Node pero no viene habilitado:
+El scaffolding en sí corrió bien, pero el install final falló con `yarn: not found` — Backstage usa Yarn vía Corepack, que viene con Node pero no viene habilitado por defecto:
 
 ```bash
 sudo corepack enable
@@ -74,7 +74,7 @@ Un `ClusterRole: view` — solo lectura, sin capacidad de crear ni borrar nada �
 
 Con todo levantado (`yarn start`, que corre frontend y backend juntos en un solo proceso), entrar a la UI desde otra máquina en la LAN tiró un error que no tenía nada que ver con Backstage en sí:
 
-> **Issue 02**: `TypeError: globalThis.crypto.randomUUID is not a function`, al loguearse como guest. Causa: `crypto.randomUUID` (Web Crypto API) solo existe en un *secure context* — HTTPS, o el caso especial de `localhost`. Acceder por `http://192.168.100.100:3000` no cuenta, aunque cargue la página sin drama aparente. Fix sin certificados de por medio: túnel SSH desde la notebook, para que el navegador vea el origen como `localhost` de verdad. Un segundo tropiezo en el mismo lugar — el primer intento de túnel (`ssh -L 3000:localhost:3000 ...`) daba `connect failed: Connection refused` en loop, porque `localhost` del lado del servidor resolvía primero a `::1` (IPv6) y Backstage escuchaba en IPv4. Forzar `127.0.0.1` explícito en el forwarding lo resolvió.
+> **Issue 02**: `TypeError: globalThis.crypto.randomUUID is not a function`, al loguearse como guest. Causa: `crypto.randomUUID` (Web Crypto API) solo existe en un *secure context* — HTTPS, o el caso especial de `localhost`. Acceder por `http://192.168.100.100:3000` no cuenta, aunque cargue la página sin drama aparente. *Fix sin certificados* de por medio: túnel SSH desde la notebook, para que el navegador vea el origen como `localhost` de verdad. Siguiente problema: el primer intento de túnel (`ssh -L 3000:localhost:3000 ...`) daba `connect failed: Connection refused` en loop, porque `localhost` del lado del servidor resolvía primero a `::1` (IPv6) y Backstage escuchaba en IPv4 (este estuvo mas duro de diagnosticar..). Forzar `127.0.0.1` explícito en el forwarding lo resolvió.
 
 Con el catálogo arriba y `gostalgia` registrado (un `catalog-info.yaml` de 15 líneas, commiteado directo a `main`), la pestaña de Kubernetes del componente mostraba `No Kubernetes resources` — sin ningún error, la auth ya andaba bien.
 
@@ -86,7 +86,7 @@ metadata:
     backstage.io/kubernetes-id: gostalgia-api
 ```
 
-Con eso aplicado, la pestaña pasó a mostrar el `Deployment` y el `Pod` reales de `fury-dev`, corriendo.
+Con eso aplicado, la pestaña pasó a mostrar el `Deployment` y los `Pod` reales de `fury-dev` corriendo.
 
 ![catálogo de Backstage con gostalgia mostrando el Deployment y el Pod reales en fury-dev](../img/2026-08-17-poor-mans-fury-part-04/backstage-kubernetes-tab.png)
 
@@ -96,7 +96,7 @@ Con eso aplicado, la pestaña pasó a mostrar el `Deployment` y el `Pod` reales 
 
 Antes de escribir una sola línea del template hubo que resolver un choque de sintaxis nada obvio: Backstage (`${{ }}`) y GitHub Actions (`${{ }}`) usan exactamente la misma notación de templating. Si el pipeline de CI viviera en la parte del skeleton que Backstage procesa y renderiza, intentaría interpretar también las expresiones de GitHub Actions (`${{ github.sha }}`, `${{ secrets.GITHUB_TOKEN }}`) y las rompería. La solución no es escapar cada expresión, es separar el skeleton en dos partes con dos acciones distintas: `fetch:template` (con templating activo) solo para lo que necesita valores reales del formulario — `catalog-info.yaml`, `go.mod`, `main.go`, `README.md` — y `fetch:plain` (copia literal, sin tocar nada) para `Dockerfile` y el workflow de CI, que además se escribieron para no necesitar ningún valor inyectado, usando `${{ github.repository }}` nativo de Actions en vez de un nombre de imagen pasado por parámetro.
 
-El template completo son 6 pasos: generar el código base (templado), copiar CI/CD y Dockerfile (estático), publicar el repo nuevo en GitHub, generar el manifest de deploy en un directorio aparte (templado), abrir un PR con ese manifest contra el repo de infra, y registrar la app en el catálogo.
+El template completo son 6 pasos: generar el código base (renderizado), copiar CI/CD y Dockerfile (estático), publicar el repo nuevo en GitHub, generar el manifest de deploy en un directorio aparte (renderizado), abrir un PR con ese manifest contra el repo de infra, y registrar la app en el catálogo.
 
 ```yaml
 steps:
@@ -134,12 +134,12 @@ La primera corrida real, con un nombre de prueba (`fury-template-test`), pasó l
 
 > **Issue 04**: `missing go.sum entry for module providing package github.com/gin-gonic/gin`. El `go.mod` generado solo listaba las dos dependencias directas, sin `go.sum` ni el bloque `// indirect` — con el grafo de módulos podado que usa Go desde la 1.17, comandos en modo `-mod=readonly` (el default) no pueden resolver dependencias transitivas sin eso. El primer intento de fix, agregar `go mod download` al pipeline, no alcanzó: baja los paquetes pero no completa el `go.sum` para todo el árbol transitivo, hace falta `go mod tidy`. En vez de correr eso en cada CI de cada app generada — funcionaría, pero nadie commitea un `go.mod` sin su `go.sum` en un repo Go de verdad — se generó el `go.sum` real una única vez, contra las versiones fijas de `gin`/`client_golang` que usa el template, y quedó embebido como archivo estático: no varía entre apps generadas porque las versiones no varían.
 
-Con el fix aplicado y confirmado en el repo de prueba, el pipeline completo corrió verde de punta a punta — lint, test, build, imagen publicada en GHCR — antes de darlo por bueno en la fuente del template. `fury-template-test` cumplió su propósito y se borró: PR cerrado sin mergear, repo eliminado.
+Con el fix aplicado y confirmado en el repo de prueba, el pipeline completo corrió verde de punta a punta: lint, test, build, imagen publicada en GHCR. `fury-template-test` cumplió su propósito y se borró: PR cerrado sin mergear, repo eliminado.
 
 ![resultado del template go-service: los 6 steps en verde con los links al repo, al PR del manifest y al catálogo](../img/2026-08-17-poor-mans-fury-part-04/backstage-template-result.png)
 
 ## Dónde quedamos
 
-Backstage quedó completo en sus dos mitades: un catálogo que descubre servicios solo y muestra su estado real en Kubernetes, y un scaffolding que genera un servicio nuevo con CI/CD ya verde desde el primer push — sin ese primer push roto por un `go.sum` faltante, que es exactamente el tipo de fricción que un golden path debería absorber.
+Backstage quedó completo en sus dos mitades: un catálogo que descubre servicios solo y muestra su estado real en Kubernetes, y un scaffolding que genera un servicio nuevo con CI/CD ya verde desde el primer push. Incluido fix del `go.sum` roto, justamente para que sea una experiencia golden path, el codigo generado debe funcionar de una.
 
-Lo que no hace todavía: el PR del manifest de deploy no se aplica solo al cluster, y el policy de Vault de una app nueva sigue siendo un paso manual. Conectar eso es literalmente la fase que sigue — el flujo completo de punta a punta.
+Lo que no hace todavía: el PR del manifest de deploy no se aplica solo al cluster, y el policy de Vault de una app nueva sigue siendo un paso manual. Conectar eso es literalmente la fase que sigue: el flujo completo de punta a punta.
