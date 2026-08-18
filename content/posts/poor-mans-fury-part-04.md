@@ -136,6 +136,8 @@ La primera corrida real, con un nombre de prueba (`fury-template-test`), pasó l
 
 Con el fix aplicado y confirmado en el repo de prueba, el pipeline completo corrió verde de punta a punta — lint, test, build, imagen publicada en GHCR — antes de darlo por bueno en la fuente del template. `fury-template-test` cumplió su propósito y se borró: PR cerrado sin mergear, repo eliminado.
 
+![resultado del template go-service: los 6 steps en verde con los links al repo, al PR del manifest y al catálogo](../img/2026-08-17-poor-mans-fury-part-04/backstage-template-result.png)
+
 ## Dónde quedamos
 
 Backstage quedó completo en sus dos mitades: un catálogo que descubre servicios solo y muestra su estado real en Kubernetes, y un scaffolding que genera un servicio nuevo con CI/CD ya verde desde el primer push — sin ese primer push roto por un `go.sum` faltante, que es exactamente el tipo de fricción que un golden path debería absorber.
