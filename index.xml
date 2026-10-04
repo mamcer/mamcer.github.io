@@ -282,5 +282,13 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.101-b13, mixed mode)
 &lt;p&gt;In this case we have a clean Windows Server 2012 Standard installation. Our first steps are the installation of the JDK and SQL Server.&lt;/p&gt;
 &lt;h2 id="install-prerequisites"&gt;Install Prerequisites&lt;/h2&gt;
 &lt;h3 id="jdk"&gt;JDK&lt;/h3&gt;
-&lt;p&gt;First of all we want to install Java. In this case Oracle JDK, you can find the latest version in: &lt;a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html"&gt;http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html&lt;/a&gt;&lt;/p&gt;</description></item><item><title>About me</title><link>https://mamcer.github.io/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mamcer.github.io/about/</guid><description>&lt;p&gt;I am a technical leader with over 20 years of experience architecting high-availability systems and leading high-performance engineering teams. My career has evolved from building on-premises monoliths to orchestrating cloud-native ecosystems, always with a focus on scalability and operational excellence.&lt;/p&gt;
-&lt;p&gt;Currently, I am focused on &lt;strong&gt;AI-Augmented Delivery&lt;/strong&gt;, with the integration of AI-augmented workflows (SDLC) to accelerate delivery velocity and elevate code quality. Working on strategic technical transitions—such as modernizing legacy environments and integrating high-performance services—while managing multicultural squads in hyper-growth sectors like Fintech and Energy.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;First of all we want to install Java. In this case Oracle JDK, you can find the latest version in: &lt;a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html"&gt;http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html&lt;/a&gt;&lt;/p&gt;</description></item><item><title>About me</title><link>https://mamcer.github.io/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mamcer.github.io/about/</guid><description>&lt;p&gt;Systems engineer with 20+ years in software, most of them leading teams
+without leaving the technical work.&lt;/p&gt;
+&lt;p&gt;I led engineering for Mercado Pago&amp;rsquo;s Treasury &amp;amp; FX platform at Mercado Libre
+(2019–2025), and I now lead technology at VEMO, an EV charging platform in
+Mexico. Day to day that means architecture, modernizing a monolith, and
+making AI coding tools part of how a small team ships.&lt;/p&gt;
+&lt;p&gt;This blog is where I write about what I build on my own time, like
+&lt;a href="https://mamcer.github.io/poor-mans-fury-parte-1/"&gt;Poor Man&amp;rsquo;s Fury&lt;/a&gt;, a from-scratch internal developer
+platform on a single home server, and about how AI is changing the way
+engineering teams work. Many recent posts are in Spanish.&lt;/p&gt;</description></item></channel></rss>
