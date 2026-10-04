@@ -3,6 +3,11 @@ date: 2026-05-31
 layout: post
 title: AI Didn't Replace Our Bottlenecks. It Moved Them.
 subtitle: From Scrum to AI-Centered Engineering
+description: "How a 7-person team doubled its output with AI-driven development, and why we rebuilt our delivery process once coding stopped being the bottleneck."
+cover:
+  image: "img/2026-05-31-from-scrum-to-ai-centered-engineering/og-card.png"
+  hiddenInSingle: true
+  hiddenInList: true
 ---
 
 In just a few months, a 7-person team doubled its output. Not by working longer hours, but by rethinking how we build software products with AI.

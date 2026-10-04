@@ -3,6 +3,11 @@ date: 2026-07-21
 layout: post
 title: "Poor Man's Fury - Parte 1"
 subtitle: Cluster, ingress y el primer pipeline
+description: "Primera parte de la serie: reconstruir una plataforma interna de desarrollo estilo Fury con herramientas open source en un único servidor casero. Cluster K3s, ingress con Traefik y el primer pipeline."
+cover:
+  image: "img/2026-07-21-poor-mans-fury-part-01/nuc-og.jpg"
+  hiddenInSingle: true
+  hiddenInList: true
 ---
 
 En mis casi seis años trabajando en Mercado Libre aprendí y crecí como profesional de una forma que no lo había hecho antes. Como todo aprendizaje eso ya forma parte de uno y te acompaña adonde vayas. Pero hay cosas que uno no se lleva. De esas, la que más había naturalizado y que la realidad de trabajar en una startup se encargó de demostrarme, fue Fury.
