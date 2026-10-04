@@ -3,7 +3,8 @@ languageCode: en-us
 title: Mario Moreno
 theme: PaperMod
 
-paginate: 5
+pagination:
+  pagerSize: 5
 
 params:
   env: production
