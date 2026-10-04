@@ -1,15 +1,25 @@
 ---
 layout: page
 title: About me
-subtitle: Senior Engineering Leader | AI-Augmented Delivery
 ---
 
-I am a technical leader with over 20 years of experience architecting high-availability systems and leading high-performance engineering teams. My career has evolved from building on-premises monoliths to orchestrating cloud-native ecosystems, always with a focus on scalability and operational excellence.
+Systems engineer with 20+ years in software, most of them leading teams
+without leaving the technical work.
 
-Currently, I am focused on **AI-Augmented Delivery**, with the integration of AI-augmented workflows (SDLC) to accelerate delivery velocity and elevate code quality. Working on strategic technical transitions—such as modernizing legacy environments and integrating high-performance services—while managing multicultural squads in hyper-growth sectors like Fintech and Energy.
+I led engineering for Mercado Pago's Treasury & FX platform at Mercado Libre
+(2019–2025), and I now lead technology at VEMO, an EV charging platform in
+Mexico. Day to day that means architecture, modernizing a monolith, and
+making AI coding tools part of how a small team ships.
 
-Outside of deep tech work, I spend my time mentoring the next generation of engineers. I love building team cultures centered around curiosity and great craft. Amateur runner, forever tinkerer.
+This blog is where I write about what I build on my own time, like
+[Poor Man's Fury](/poor-mans-fury-parte-1/), a from-scratch internal developer
+platform on a single home server, and about how AI is changing the way
+engineering teams work. Many recent posts are in Spanish.
 
-Born in [Balcarce](https://en.wikipedia.org/wiki/Balcarce,_Buenos_Aires), educated in [Tandil](https://en.wikipedia.org/wiki/Tandil), and currently based in Buenos Aires, Argentina. 
+Born in [Balcarce](https://en.wikipedia.org/wiki/Balcarce,_Buenos_Aires),
+educated in [Tandil](https://en.wikipedia.org/wiki/Tandil), based in Buenos
+Aires. Amateur runner, forever tinkerer.
+
+[CV](https://github.com/mamcer/cv/raw/pdf-download/CV_Mario_Moreno.pdf) · [GitHub](https://github.com/mamcer) · [LinkedIn](https://linkedin.com/in/mamcer)
 
 *This blog, its content, and opinions are strictly my own.*

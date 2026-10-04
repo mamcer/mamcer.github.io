@@ -7,7 +7,7 @@ paginate: 5
 
 params:
   env: production
-  description: "AI-First Engineering Manager & Tech Architect"
+  description: "Hands-on engineering leader. Software architecture, Go, distributed systems and AI-assisted development. Mercado Pago FX/Treasury → VEMO."
   author: Mario Moreno
   
   defaultTheme: auto
@@ -22,7 +22,7 @@ params:
   profileMode:
     enabled: true
     title: Mario Moreno
-    subtitle: "AI-First Engineering Manager & Software Architect. Dedicated to evolving high-performance teams and modernizing technical ecosystems."
+    subtitle: "Hands-on engineering leader. Software architecture, Go, distributed systems and AI-assisted development. Mercado Pago FX/Treasury → VEMO."
     imageUrl: "/img/avatar-icon.jpg"
     imageWidth: 120
     imageHeight: 120
@@ -32,7 +32,7 @@ params:
       - name: About
         url: about
       - name: CV
-        url: https://github.com/mamcer/cv/blob/main/CV_Mario_Moreno_Senior_Engineering_Leader.pdf
+        url: https://github.com/mamcer/cv/raw/pdf-download/CV_Mario_Moreno.pdf
 
   socialIcons:
     - name: linkedin
