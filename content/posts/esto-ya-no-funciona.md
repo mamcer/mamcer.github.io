@@ -76,17 +76,19 @@ Para ser justo con los números:
 
 ## Lo que conté antes y lo que cuento ahora
 
-Hace unos meses publiqué en LinkedIn los resultados de este cambio. Diferencias que nos dejó el tiempo:
+Ya escribí sobre esto antes: en mayo, en este blog ([AI Didn't Replace Our Bottlenecks. It Moved Them.]({{< ref "from-scrum-to-ai-centered-engineering.md" >}})), y hace unos meses en LinkedIn. Diferencias que nos dejó el tiempo:
 
 En ese momento lo presenté como una adopción de IA, "una forma de trabajar centrada en AI". Mirando los datos con más distancia, lo que hizo la diferencia fue el proceso alrededor. La IA cambió dónde estaba el cuello de botella; el proceso es lo que nos permitió aprovecharlo.
 
 Los números miden cosas distintas:
 
-- **0.5 → 2 releases por semana vs. 2.7 → 6.4 deploys por semana.** El primero cuenta releases planificados, y el 2 era el mínimo que nos pusimos, no el promedio. Acá cuento todos los pasajes a producción del backend, incluidos hotfixes, cambios de infraestructura y respuestas a incidentes, que hoy son un tercio del total.
-- **0% de releases revertidos vs. 5 reverts de 112.** El 0% era sobre releases planificados. Los 5 reverts de acá salen de todos los pasajes a producción, así que también incluyen hotfixes revertidos.
-- **1.7x de productividad individual vs. cambios mergeados.** El 1.7x fue una medición de las primeras semanas. Acá muestro cambios mergeados por mes del equipo entero, que es una señal de flujo y no de productividad individual.
+- **Los resultados de mayo eran de Q1, antes de Watts Flow.** Eran la IA más el esfuerzo a pulmón. El proceso recién arrancaba.
+- **4.6 horas de lead time (mayo) vs. casi 4 días del merge a producción.** El de mayo medía desde el commit hasta el merge: la parte que la IA aceleró. Lo que pasaba después del merge no lo medía, y en ese mismo período seguía en casi 4 días. Ahí estaba el cuello de botella que se había movido.
+- **0.5 → 2 releases por semana (LinkedIn) vs. 2.7 → 6.4 deploys por semana.** El primero cuenta releases planificados, y el 2 era el mínimo que nos pusimos, no el promedio. Acá cuento todos los pasajes a producción del backend, incluidos hotfixes, cambios de infraestructura y respuestas a incidentes, que hoy son un tercio del total.
+- **0% de releases revertidos (LinkedIn) vs. 5 reverts de 112.** El 0% era sobre releases planificados. Los 5 reverts de acá salen de todos los pasajes a producción, así que también incluyen hotfixes revertidos.
+- **1.7x de productividad individual (LinkedIn) vs. cambios mergeados.** El 1.7x fue una medición de las primeras semanas. Acá muestro cambios mergeados por mes del equipo entero, que es una señal de flujo y no de productividad individual.
 
-Ese post también contaba lo que este no cuenta: lo que llegó a los usuarios (la nueva experiencia de pago con tarjeta, el motor de descuentos, 25% menos tickets de soporte) y la estabilidad de la plataforma (83+ días estables, incluido el arranque del Mundial). Y eso se sostuvo: hace meses que no tenemos un incidente que nos lleve a un warroom. Los números de flujo de acá son la otra mitad: cómo llegamos a poder entregar eso.
+El de LinkedIn también contaba lo que este no cuenta: lo que llegó a los usuarios (la nueva experiencia de pago con tarjeta, el motor de descuentos, 25% menos tickets de soporte) y la estabilidad de la plataforma (83+ días estables, incluido el arranque del Mundial). Y eso se sostuvo: hace meses que no tenemos un incidente que nos lleve a un warroom. Los números de flujo de acá son la otra mitad: cómo llegamos a poder entregar eso.
 
 ## Lo que todavía no resolvimos
 
