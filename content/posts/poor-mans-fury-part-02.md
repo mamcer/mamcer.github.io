@@ -5,7 +5,7 @@ title: "Poor Man's Fury - Parte 2"
 subtitle: Vault y observabilidad
 ---
 
-Como escenas del episodio anterior, en el primer post dejamos: un runner corriendo como servicio en el NUC, un pipeline en verde en cada push a main, y una imagen real publicada en GitHub Container Registry. Pero nada de eso tenía todavía forma segura de manejar un secret. Cualquier credencial que la app necesitara iba a terminar en por ejemplo un .env suelto.
+Como escenas del episodio anterior, en [el primer post]({{< ref "poor-mans-fury-part-01.md" >}}) dejamos: un runner corriendo como servicio en el NUC, un pipeline en verde en cada push a main, y una imagen real publicada en GitHub Container Registry. Pero nada de eso tenía todavía forma segura de manejar un secret. Cualquier credencial que la app necesitara iba a terminar en por ejemplo un .env suelto.
 
 En esta parte se implementa la gestión de secrets con Vault, además se agrega observabilidad con Prometheus, Loki y Grafana. Al final de esta parte una aplicación debería correr en el cluster con sus credenciales inyectadas automáticamente exponiendo sus métricas y logs sin necesidad de que alguien se loguee a un pod a mano para verlo.
 
@@ -259,3 +259,5 @@ Luego se pueden agregar cuatro dashboards prearmados por ID (Import > 'número')
 Una app corriendo en `fury-dev` con sus secrets inyectados por Vault, sus métricas y logs ya aparecen en Grafana sin haber tenido que instrumentar nada a mano para eso.
 
 Lo que queda pendiente es un catalogo, una UI, algo que se parezca a un producto. Ahi entra Backstage como front, capa UI sobre nuestro Fury.
+
+*(Spoiler: antes de Backstage vinieron los traces, en la [Parte 3]({{< ref "poor-mans-fury-part-03.md" >}}). Backstage llegó en la [Parte 4]({{< ref "poor-mans-fury-part-04.md" >}}).)*

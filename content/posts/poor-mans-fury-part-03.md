@@ -5,7 +5,7 @@ title: "Poor Man's Fury - Parte 3"
 subtitle: Traces, métricas y error budgets
 ---
 
-Escenas del episodio anterior: en la Parte 2 quedó una app corriendo en `fury-dev` con sus secrets inyectados por Vault, métricas y logs apareciendo solos en Grafana. El cierre apuntaba a Backstage como próximo paso: un catálogo, una UI, algo que se pareciera a un producto.
+Escenas del episodio anterior: en [la Parte 2]({{< ref "poor-mans-fury-part-02.md" >}}) quedó una app corriendo en `fury-dev` con sus secrets inyectados por Vault, métricas y logs apareciendo solos en Grafana. El cierre apuntaba a Backstage como próximo paso: un catálogo, una UI, algo que se pareciera a un producto.
 
 En el medio pasaron cosas y, repensando el plan, no tiene sentido construir un catálogo lindo sobre un sistema que no podés ver por dentro. Y "ver por dentro" es exactamente el tema con el que abrió esta serie: la diferencia entre que un LLM te sugiera un diagnóstico y poder confirmarlo vos porque entendés qué está pasando. Prometheus y Loki (Parte 2) te dicen *qué* está roto. Faltaba el tercer pilar: *por qué*, siguiendo un request específico a través de todo el sistema.
 
@@ -178,4 +178,4 @@ Con tráfico bajo/sintético como el de este homelab, las ventanas cortas van a 
 
 `gostalgia-api` ahora se puede ver a sí misma de punta a punta: traces en Tempo, métricas RED con dashboard propio, logs correlacionados por `trace_id`, y un SLO real con alertas de burn rate en vez de un umbral suelto. El pipeline que lo despliega, además, corre en minutos.
 
-Lo que sigue, según el plan que arrancó todo esto: usar este mismo stack para debug de sistemas distribuidos de verdad — inyectar fallas reales en `gostalgia`, no un endpoint de demo, y ver si la instrumentación que se armó acá alcanza para diagnosticarlas sin adivinar. Backstage sigue esperando, pero ahora hay algo real para catalogar.
+Lo que sigue, según el plan que arrancó todo esto: usar este mismo stack para debug de sistemas distribuidos de verdad — inyectar fallas reales en `gostalgia`, no un endpoint de demo, y ver si la instrumentación que se armó acá alcanza para diagnosticarlas sin adivinar. [Backstage sigue esperando]({{< ref "poor-mans-fury-part-04.md" >}}), pero ahora hay algo real para catalogar.

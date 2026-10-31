@@ -258,4 +258,4 @@ Si baja la imagen sin error, el circuito completo: push > lint > test > build > 
 
 ## Dónde quedamos
 
-El runner quedó corriendo como servicio, sobreviviendo reboots. Pipeline en verde en cada push a `main`, imagen real publicada en GitHub Container Registry. Nada de esto tiene forma segura de manejar un secret aún, eso es parte de los próximos pasos.
+El runner quedó corriendo como servicio, sobreviviendo reboots. Pipeline en verde en cada push a `main`, imagen real publicada en GitHub Container Registry. Nada de esto tiene forma segura de manejar un secret aún, eso es parte de los [próximos pasos]({{< ref "poor-mans-fury-part-02.md" >}}).

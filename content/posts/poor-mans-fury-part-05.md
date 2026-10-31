@@ -5,7 +5,7 @@ title: "Poor Man's Fury - Parte 5"
 subtitle: CLI y flujo completo
 ---
 
-Escenas del episodio anterior: la Parte 4 cerró con Backstage completo, un catálogo que descubre servicios solos y un scaffolding que genera un servicio nuevo con CI/CD ya verde desde el primer push. Faltaban dos cosas para que eso fuera más que una demo: una forma simple de operar lo que el scaffolding genera, y la prueba de que todo el circuito - de crear una app a verla corriendo con métricas y logs solos - cierra de verdad. Fases 7 y 8, las últimas del roadmap original.
+Escenas del episodio anterior: [la Parte 4]({{< ref "poor-mans-fury-part-04.md" >}}) cerró con Backstage completo, un catálogo que descubre servicios solos y un scaffolding que genera un servicio nuevo con CI/CD ya verde desde el primer push. Faltaban dos cosas para que eso fuera más que una demo: una forma simple de operar lo que el scaffolding genera, y la prueba de que todo el circuito - de crear una app a verla corriendo con métricas y logs solos - cierra de verdad. Fases 7 y 8, las últimas del roadmap original.
 
 ## Fase 7 - La CLI propia (pmf)
 
@@ -87,6 +87,6 @@ El log mostró `pmf: no existe el deployment 'cookbook' en fury-dev` — no un e
 
 ## Dónde quedamos
 
-Las 8 fases del roadmap que arrancó en la Parte 1 están completas. Un cluster que corre solo, secrets que nunca tocan un `.env`, una app que se ve a sí misma de punta a punta, un catálogo que descubre servicios sin que nadie los registre a mano, un scaffolding que genera código con CI/CD ya verde, y ahora un CLI y un flujo que cierran el círculo completo: de un clic en Backstage a un pod corriendo con métricas y logs, sin que nadie tipee un `kubectl` de memoria.
+Las 8 fases del roadmap que arrancó en [la Parte 1]({{< ref "poor-mans-fury-part-01.md" >}}) están completas. Un cluster que corre solo, secrets que nunca tocan un `.env`, una app que se ve a sí misma de punta a punta, un catálogo que descubre servicios sin que nadie los registre a mano, un scaffolding que genera código con CI/CD ya verde, y ahora un CLI y un flujo que cierran el círculo completo: de un clic en Backstage a un pod corriendo con métricas y logs, sin que nadie tipee un `kubectl` de memoria.
 
 Poor Man's Fury ya demostró lo que tenía que demostrar. Lo que sigue no es una fase más, es usar todo esto para lo que se armó: evidencia real de cómo se piensa una plataforma, no solo de cómo se usa una.

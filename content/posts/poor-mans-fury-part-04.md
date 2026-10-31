@@ -5,7 +5,7 @@ title: "Poor Man's Fury - Parte 4"
 subtitle: Catálogo y scaffolding
 ---
 
-Escenas del episodio anterior: la Parte 3 cerró con `gostalgia-api` viéndose a sí misma de punta a punta — traces, métricas, logs correlacionados, un SLO real con burn rate — y un gancho hacia sistemas distribuidos: inyectar fallas reales, no un endpoint de demo además de ver si la instrumentación alcanzaba para diagnosticarlas sin adivinar, fase 4.5.
+Escenas del episodio anterior: [la Parte 3]({{< ref "poor-mans-fury-part-03.md" >}}) cerró con `gostalgia-api` viéndose a sí misma de punta a punta — traces, métricas, logs correlacionados, un SLO real con burn rate — y un gancho hacia sistemas distribuidos: inyectar fallas reales, no un endpoint de demo además de ver si la instrumentación alcanzaba para diagnosticarlas sin adivinar, fase 4.5.
 
 Esta parte retoma el orden original: Backstage, catálogo y scaffolding, fases 5 y 6.
 
@@ -78,7 +78,7 @@ Con todo levantado (`yarn start`, que corre frontend y backend juntos en un solo
 
 Con el catálogo arriba y `gostalgia` registrado (un `catalog-info.yaml` de 15 líneas, commiteado directo a `main`), la pestaña de Kubernetes del componente mostraba `No Kubernetes resources` — sin ningún error, la auth ya andaba bien.
 
-> **Issue 03**: el plugin de Kubernetes no filtra recursos por namespace solamente, filtra por el label `backstage.io/kubernetes-id=<id>` en cada objeto — `Deployment`, `Service`, y también los `Pod`. El manifiesto real de `gostalgia-api` no tenía ese label en ningún lado. Se vuelve a encontrar, casi textual, el mismo tipo de bug de la Parte 3 con el `ServiceMonitor`: un selector que filtra por labels de un objeto específico, no por el namespace ni por el selector de otro objeto relacionado. El fix va en el YAML fuente, no con `kubectl label` suelto — en tres lugares: metadata del `Deployment`, metadata del template de Pod (para que los pods lo hereden), y metadata del `Service`.
+> **Issue 03**: el plugin de Kubernetes no filtra recursos por namespace solamente, filtra por el label `backstage.io/kubernetes-id=<id>` en cada objeto — `Deployment`, `Service`, y también los `Pod`. El manifiesto real de `gostalgia-api` no tenía ese label en ningún lado. Se vuelve a encontrar, casi textual, el mismo tipo de bug de [la Parte 3 con el `ServiceMonitor`]({{< ref "poor-mans-fury-part-03.md#métricas-red-y-el-servicemonitor-que-no-aparecía" >}}): un selector que filtra por labels de un objeto específico, no por el namespace ni por el selector de otro objeto relacionado. El fix va en el YAML fuente, no con `kubectl label` suelto — en tres lugares: metadata del `Deployment`, metadata del template de Pod (para que los pods lo hereden), y metadata del `Service`.
 
 ```yaml
 metadata:
@@ -141,4 +141,4 @@ Con el fix aplicado y confirmado en el repo de prueba, el pipeline completo corr
 
 Backstage quedó completo en sus dos mitades: un catálogo que descubre servicios solo y muestra su estado real en Kubernetes, y un scaffolding que genera un servicio nuevo con CI/CD ya verde desde el primer push. Incluido fix del `go.sum` roto, justamente para que sea una experiencia golden path, el código generado debe funcionar de una.
 
-Lo que no hace todavía: el PR del manifest de deploy no se aplica solo al cluster, y el policy de Vault de una app nueva sigue siendo un paso manual. Conectar eso es literalmente la fase que sigue: el flujo completo de punta a punta.
+Lo que no hace todavía: el PR del manifest de deploy no se aplica solo al cluster, y el policy de Vault de una app nueva sigue siendo un paso manual. Conectar eso es literalmente [la fase que sigue]({{< ref "poor-mans-fury-part-05.md" >}}): el flujo completo de punta a punta.
