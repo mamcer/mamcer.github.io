@@ -89,4 +89,4 @@ El log mostró `pmf: no existe el deployment 'cookbook' en fury-dev` — no un e
 
 Las 8 fases del roadmap que arrancó en [la Parte 1]({{< ref "poor-mans-fury-part-01.md" >}}) están completas. Un cluster que corre solo, secrets que nunca tocan un `.env`, una app que se ve a sí misma de punta a punta, un catálogo que descubre servicios sin que nadie los registre a mano, un scaffolding que genera código con CI/CD ya verde, y ahora un CLI y un flujo que cierran el círculo completo: de un clic en Backstage a un pod corriendo con métricas y logs, sin que nadie tipee un `kubectl` de memoria.
 
-Poor Man's Fury ya demostró lo que tenía que demostrar. Lo que sigue no es una fase más, es usar todo esto para lo que se armó: evidencia real de cómo se piensa una plataforma, no solo de cómo se usa una.
+Poor Man's Fury ya demostró lo que tenía que demostrar. Lo que sigue no es una fase más, es usar todo esto para lo que se armó: evidencia real de cómo se piensa una plataforma, no solo de cómo se usa una. El primer ejemplo: [el Extra de Navidrome]({{< ref "poor-mans-fury-extra-navidrome.md" >}}), un server de música para la casa.
