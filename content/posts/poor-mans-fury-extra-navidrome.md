@@ -118,4 +118,4 @@ Un usuario por persona, sin permisos de admin, y los flac salen tal cual, sin tr
 
 Navidrome no usó casi nada de lo que hace a Poor Man's Fury una plataforma "de desarrollo": ni Backstage, ni `pmf`, ni CI, ni Vault. Usó la base: K3s, Traefik, un volumen y logs que aparecen solos. Y con eso alcanzó para que sumar un servicio a la casa sea un manifiesto y un `kubectl apply`.
 
-Lo que sigue: Jellyfin para los videos e Immich para las fotos.
+Lo que sigue: [ordenar el archivo]({{< ref "poor-mans-fury-extra-ordenar-el-archivo.md" >}}) y después [Immich]({{< ref "poor-mans-fury-extra-immich.md" >}}) para las fotos.
