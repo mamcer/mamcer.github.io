@@ -17,7 +17,7 @@ En ese contexto 'Gostalgia' venía a indexar, detectar y descartar gigas de info
 
 Long story short: tuvo varios releases, llegué a escanear todos los archivos, una web muy básica, generar un 'maestro' sin archivos repetidos. Con IA se puede iterar código muy rápido, pero también, como el objetivo nunca fue generar un producto en sí, se perdió un poco la motivación de llevar esa versión 0.9 a algo más completo.
 
-El disco del archivo, `homunculus`, es un SSD de 4 TB con todo lo que fui juntando desde la facultad: fotos de cámaras que ya no existen, volcados de celulares, CDs de backup, discos de la familia y años de "por las dudas copio esto acá". Gostalgia por definición copia los archivos a un maestro, manteniendo links a repetidos en una base de datos pero con una única copia física. En ese contexto, las fechas de la copia son del momento en que se copió (2025 ultimo scan completo) manteniendo en la base de datos la fecha original.
+El disco del archivo, `homunculus`, es un SSD de 4 TB con todo lo que fui juntando desde la facultad: fotos de cámaras que ya no existen, volcados de celulares, CDs de backup, discos de la familia y años de "por las dudas copio esto acá". Gostalgia por definición copia los archivos a un maestro, manteniendo links a repetidos en una base de datos pero con una única copia física. En ese contexto, las fechas de la copia son del momento en que se copió (2025, último scan completo) manteniendo en la base de datos la fecha original.
 
 La decisión fue dar por finalizado Gostalgia y rehacer el análisis.
 
