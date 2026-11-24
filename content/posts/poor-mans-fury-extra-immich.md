@@ -116,4 +116,4 @@ Immich usó la misma base que Navidrome (K3s, un namespace, volúmenes `hostPath
 
 Por el momento, súper contento con el resultado. Este orden de fotos y videos, y tenerlos disponibles dentro de la LAN para toda la familia, era una deuda personal. Gostalgia me dejó el mayor aprendizaje en sus primeras etapas; después era más un freno que otra cosa.
 
-Lo que sigue: sist2, un buscador para todo lo demás del archivo (documentos, comprimidos, backups viejos).
+Lo que sigue: [sist2]({{< ref "poor-mans-fury-extra-sist2.md" >}}), un buscador para todo lo demás del archivo (documentos, comprimidos, backups viejos).
